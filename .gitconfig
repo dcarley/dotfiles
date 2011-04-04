@@ -1,0 +1,10 @@
+# Use nice syntax highlighting everywhere.
+[color]
+    ui = true
+
+# Alias some shorthand commands like SVN.
+[alias]
+    st = status
+    di = diff
+    ci = commit
+    br = branch
