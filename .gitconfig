@@ -8,3 +8,8 @@
     di = diff
     ci = commit
     br = branch
+
+    # push/pull only the current branch.
+    # Serves "push.default = tracking" behaviour for <1.6.3 clients.
+    bpush = "!f() { git push ${1:-origin} $(git symbolic-ref HEAD); }; f"
+    bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
