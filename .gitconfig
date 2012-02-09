@@ -1,9 +1,9 @@
-# Use nice syntax highlighting everywhere.
 [color]
+    # Use nice syntax highlighting everywhere.
     ui = true
 
-# Alias some shorthand commands like SVN.
 [alias]
+    # Alias some shorthand commands like SVN.
     st = status
     di = diff
     ci = commit
@@ -13,3 +13,7 @@
     # Serves "push.default = tracking" behaviour for <1.6.3 clients.
     bpush = "!f() { git push ${1:-origin} $(git symbolic-ref HEAD); }; f"
     bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
+
+[push]
+    # Push the local/tracking branch, rather than everything.
+    default = tracking
