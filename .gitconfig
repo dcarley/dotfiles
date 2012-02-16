@@ -11,10 +11,12 @@
 
     # push/pull only the current branch.
     # Serves "push.default = tracking" behaviour for <1.6.3 clients.
+    # Ref: http://stackoverflow.com/a/2444495
     bpush = "!f() { git push ${1:-origin} $(git symbolic-ref HEAD); }; f"
     bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
 
     # Force `stash pop` on a dirty tree.
+    # Ref: http://stackoverflow.com/a/3733698
     fpop = "!f() { git stash show -p | git apply && git stash drop; }; f"
 
 [push]
