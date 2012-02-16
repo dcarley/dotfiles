@@ -14,6 +14,9 @@
     bpush = "!f() { git push ${1:-origin} $(git symbolic-ref HEAD); }; f"
     bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
 
+    # Force `stash pop` on a dirty tree.
+    fpop = "!f() { git stash show -p | git apply && git stash drop; }; f"
+
 [push]
     # Push the local/tracking branch, rather than everything.
     default = tracking
