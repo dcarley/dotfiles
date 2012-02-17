@@ -9,3 +9,6 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
+
+" I want to love folding, but, no.
+set nofoldenable
