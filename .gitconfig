@@ -1,3 +1,7 @@
+[user]
+    name = Dan Carley
+    email = dan.carley@gmail.com
+
 [color]
     # Use nice syntax highlighting everywhere.
     ui = true
