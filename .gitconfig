@@ -23,6 +23,9 @@
     # Ref: http://stackoverflow.com/a/3733698
     fpop = "!f() { git stash show -p | git apply && git stash drop; }; f"
 
+    # Edit unmerged files that have merge conflicts.
+    resolve = "!f() { git diff --name-only --diff-filter=U; }; vim $(f)"
+
 [push]
     # Push the local/tracking branch, rather than everything.
     default = tracking
