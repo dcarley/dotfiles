@@ -10,7 +10,7 @@
     # Alias some shorthand commands like SVN.
     st = status
     di = diff
-    ci = commit
+    ci = commit --verbose
     br = branch
 
     # push/pull only the current branch.
