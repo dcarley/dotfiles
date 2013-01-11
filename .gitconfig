@@ -12,6 +12,7 @@
     di = diff
     ci = commit --verbose
     br = branch
+    co = checkout
 
     # push/pull only the current branch.
     # Serves "push.default = tracking" behaviour for <1.6.3 clients.
