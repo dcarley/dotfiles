@@ -4,6 +4,10 @@ set bg=dark
 " Auto-indent is more annoyance than aide.
 set noai
 
+" Wrap lines for an 80char term.
+" Mostly for git commit messages.
+set tw=76
+
 " Stomp on hardtabs.
 set expandtab
 set shiftwidth=2
