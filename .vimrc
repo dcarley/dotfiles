@@ -1,6 +1,9 @@
 " White on black is where it's at.
 set bg=dark
 
+" Always highlight. Disabled on OSX by default.
+syntax on
+
 " Auto-indent is more annoyance than aide.
 set noai
 
