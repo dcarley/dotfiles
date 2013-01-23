@@ -27,6 +27,13 @@
     # Edit unmerged files that have merge conflicts.
     resolve = "!f() { git diff --name-only --diff-filter=U; }; vim $(f)"
 
+    # Delete merged branches.
+    brc = "!f() { \
+      git branch --merged master |\
+      grep -v '^* master$' |\
+      xargs git branch --delete; \
+    }; f"
+
 [push]
     # Push the local/tracking branch, rather than everything.
     default = tracking
