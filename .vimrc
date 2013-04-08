@@ -21,3 +21,7 @@ if has("folding")
   " I want to love folding. But, no.
   set nofoldenable
 endif
+
+# Load pathogen for vim plugin management.
+# https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
