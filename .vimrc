@@ -22,9 +22,9 @@ if has("folding")
   set nofoldenable
 endif
 
-# Load pathogen for vim plugin management.
-# https://github.com/tpope/vim-pathogen
+" Load pathogen for vim plugin management.
+" https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
-# Enable plugin and indent rules from ftdetect.
+" Enable plugin and indent rules from ftdetect.
 filetype plugin indent on
