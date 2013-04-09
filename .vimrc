@@ -17,6 +17,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
+" Disable extra space when joining sentences.
+set nojoinspaces
+
 if has("folding")
   " I want to love folding. But, no.
   set nofoldenable
