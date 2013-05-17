@@ -14,6 +14,7 @@
     br = branch
     co = checkout
     rh = reset HEAD
+    short = rev-parse --short
 
     # push/pull only the current branch.
     # Serves "push.default = tracking" behaviour for <1.6.3 clients.
