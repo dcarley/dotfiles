@@ -21,6 +21,7 @@ task :default do
       File.unlink(target)
     end
 
+    puts "Linking #{target}"
     File.symlink(source, target)
   end
 end
