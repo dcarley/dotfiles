@@ -2,7 +2,7 @@ require 'rake'
 require 'pathname'
 
 task :default do
-  exclude = /(\.\.?|Rakefile)$/
+  exclude = /(\.\.?|\.git|Rakefile)$/
   rake_dir = Pathname.new(__FILE__).parent
   target_dir = Pathname.new(ENV["HOME"])
   source_dir = Pathname.new(rake_dir).relative_path_from(target_dir)
