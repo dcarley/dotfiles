@@ -6,3 +6,5 @@ unalias git
 [[ -f $(brew --prefix)/share/python/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/share/python/virtualenvwrapper_lazy.sh
 
 alias b="bundle exec"
+# Allow square brackets for passing args.
+alias rake="noglob rake"
