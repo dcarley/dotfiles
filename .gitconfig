@@ -36,6 +36,12 @@
       xargs git branch --delete; \
     }; f"
 
+    # Grab a pull request as a local branch.
+    pr = "!f() { \
+      [ $# -eq "1" ] && REMOTE=origin PR=$1 || REMOTE=$1 PR=$2; \
+      git fetch ${REMOTE} refs/pull/${PR}/head:pr/${PR}; \
+    }; f"
+
 [push]
     # Push the local/tracking branch, rather than everything.
     default = tracking
