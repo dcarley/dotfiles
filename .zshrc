@@ -6,3 +6,6 @@ ZSH_THEME="robbyrussell"
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+
+# Disable auto correct for commands and args.
+unsetopt correct_all
