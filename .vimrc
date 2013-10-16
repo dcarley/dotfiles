@@ -17,6 +17,9 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 
+" Except for golang. Just make them look like 2sp.
+autocmd FileType go setlocal noexpandtab
+
 " Disable extra space when joining sentences.
 set nojoinspaces
 
