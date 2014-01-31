@@ -6,6 +6,12 @@
     # Use nice syntax highlighting everywhere.
     ui = true
 
+[merge]
+    tool = vimdiff
+
+[mergetool]
+    prompt = false
+
 [alias]
     # Alias some shorthand commands like SVN.
     st = status
