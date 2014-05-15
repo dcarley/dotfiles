@@ -1,2 +1,5 @@
 --type-set=puppet=.pp
---ignore-dir=vendor/gems
+--ignore-dir=vendor
+--ignore-dir=.tmp
+--ignore-dir=.rsync_cache
+--ignore-dir=coverage
