@@ -26,6 +26,7 @@ set nojoinspaces
 if has("folding")
   " I want to love folding. But, no.
   set nofoldenable
+  let g:vim_markdown_folding_disabled=1
 endif
 
 " Load pathogen for vim plugin management.
