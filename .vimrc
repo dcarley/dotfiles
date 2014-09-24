@@ -1,3 +1,10 @@
+" Load pathogen for vim plugin management.
+" https://github.com/tpope/vim-pathogen
+execute pathogen#infect()
+
+" Enable plugin and indent rules from ftdetect.
+filetype plugin indent on
+
 " White on black is where it's at.
 set bg=dark
 
@@ -28,10 +35,3 @@ if has("folding")
   set nofoldenable
   let g:vim_markdown_folding_disabled=1
 endif
-
-" Load pathogen for vim plugin management.
-" https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-
-" Enable plugin and indent rules from ftdetect.
-filetype plugin indent on
