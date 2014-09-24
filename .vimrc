@@ -18,6 +18,9 @@ set noai
 " Mostly for git commit messages.
 set tw=76
 
+" Ignore unlimited tw from vim-markdown.
+autocmd FileType markdown setlocal tw=76
+
 " Stomp on hardtabs.
 set expandtab
 set shiftwidth=2
