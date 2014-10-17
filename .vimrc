@@ -18,8 +18,8 @@ set noai
 " Mostly for git commit messages.
 set tw=76
 
-" Spell check git commit messages.
-autocmd FileType gitcommit setlocal spell
+" Spell check other things
+autocmd FileType gitcommit,rst setlocal spell
 
 " Ignore unlimited tw from vim-markdown.
 autocmd FileType markdown setlocal tw=76
