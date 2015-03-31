@@ -11,6 +11,9 @@ alias curlh="curl -s -D- -o/dev/null"
 # Allow square brackets for passing args.
 alias rake="noglob rake"
 
+export GOPATH=~/projects/gocode
+export PATH="${GOPATH}/bin:${PATH}"
+
 # VirtualBox host-only networks frequently stop working. Possibly related to
 # AnyConnect. This fixes them by switching it off and back on again.
 func fixvboxnet() {
