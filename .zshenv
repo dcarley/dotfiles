@@ -10,3 +10,11 @@ alias b="bundle exec"
 alias curlh="curl -s -D- -o/dev/null"
 # Allow square brackets for passing args.
 alias rake="noglob rake"
+
+# VirtualBox host-only networks frequently stop working. Possibly related to
+# AnyConnect. This fixes them by switching it off and back on again.
+func fixvboxnet() {
+  for IF in $(ifconfig | awk -F: '/^vboxnet/ { print $1 }'); do
+    sudo bash -c "ifconfig $IF down && ifconfig $IF up"
+  done
+}
