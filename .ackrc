@@ -1,4 +1,5 @@
 --type-set=puppet=.pp
+--type-set=gotest:match:_test.go
 --ignore-dir=vendor
 --ignore-dir=.tmp
 --ignore-dir=.rsync_cache
