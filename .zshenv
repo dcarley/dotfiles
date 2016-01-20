@@ -14,7 +14,7 @@ alias rake="noglob rake"
 export GOPATH=~/projects/gocode
 export PATH="${GOPATH}/bin:${PATH}"
 
-eval $(boot2docker shellinit 2>/dev/null)
+eval "$(docker-machine env dev)"
 
 # VirtualBox host-only networks frequently stop working. Possibly related to
 # AnyConnect. This fixes them by switching it off and back on again.
