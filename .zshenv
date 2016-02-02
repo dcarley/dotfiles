@@ -12,7 +12,6 @@ alias curlh="curl -s -D- -o/dev/null"
 alias rake="noglob rake"
 
 export GOPATH=~/projects/gocode
-export PATH="${GOPATH}/bin:${PATH}"
 
 eval "$(docker-machine env dev)"
 
