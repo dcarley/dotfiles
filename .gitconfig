@@ -54,3 +54,6 @@
 [push]
     # Push the local/tracking branch, rather than everything.
     default = tracking
+
+[tig]
+  log-options = "--follow"
