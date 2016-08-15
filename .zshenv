@@ -12,6 +12,7 @@ alias curlh="curl -s -D- -o/dev/null"
 alias rake="noglob rake"
 
 export GOPATH=~/projects/gocode
+export CDPATH=.:$GOPATH/src/github.com
 
 eval "$(docker-machine env dev)"
 
