@@ -14,7 +14,6 @@ alias rake="noglob rake"
 export GOPATH=~/projects/gocode
 CDPATH=.:$GOPATH/src/github.com
 
-eval "$(docker-machine env dev)"
 alias drun="docker run --rm -ti -v $(pwd):/mnt -w /mnt"
 
 # VirtualBox host-only networks frequently stop working. Possibly related to
