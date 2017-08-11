@@ -1,4 +1,0 @@
-<?xml version="1.0"?>
-<gconf>
-	<entry name="workspaces_only_on_primary" mtime="1332420335" type="bool" value="false"/>
-</gconf>
