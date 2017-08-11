@@ -1,7 +1,3 @@
-[[ -f /opt/boxen/env.sh ]] && . /opt/boxen/env.sh
-# hub makes the zsh prompt sloooow.
-unalias git
-
 [[ -d $(brew --prefix)/share/python ]] && PATH="$(brew --prefix)/share/python:$PATH"
 [[ -f $(brew --prefix)/bin/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/bin/virtualenvwrapper_lazy.sh
 
