@@ -1,5 +1,7 @@
-[[ -d $(brew --prefix)/share/python ]] && PATH="$(brew --prefix)/share/python:$PATH"
-[[ -f $(brew --prefix)/bin/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/bin/virtualenvwrapper_lazy.sh
+if command -v brew >/dev/null 2>&1; then
+  [[ -d $(brew --prefix)/share/python ]] && PATH="$(brew --prefix)/share/python:$PATH"
+  [[ -f $(brew --prefix)/bin/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/bin/virtualenvwrapper_lazy.sh
+fi
 
 alias b="bundle exec"
 # Output headers only from GET
