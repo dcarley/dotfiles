@@ -21,14 +21,3 @@ func fixvboxnet() {
     sudo bash -c "ifconfig $IF down && ifconfig $IF up"
   done
 }
-
-if which gpg-agent >/dev/null; then
-  GPG_ENV_FILE="${HOME}/.gnupg/gpg-agent.env"
-  if ! pgrep gpg-agent >/dev/null; then
-    gpg-agent --daemon --write-env-file ${GPG_ENV_FILE} >/dev/null
-  fi
-  if [ -f ${GPG_ENV_FILE} ]; then
-    source ${GPG_ENV_FILE}
-    export GPG_AGENT_INFO
-  fi
-fi
