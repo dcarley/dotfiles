@@ -12,7 +12,7 @@ alias rake="noglob rake"
 export GOPATH=~/projects/gocode
 CDPATH=.:$GOPATH/src/github.com
 
-alias drun="docker run --rm -ti -v $(pwd):/mnt -w /mnt"
+alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
 
 # VirtualBox host-only networks frequently stop working. Possibly related to
 # AnyConnect. This fixes them by switching it off and back on again.
