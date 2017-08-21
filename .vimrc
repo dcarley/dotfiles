@@ -11,9 +11,6 @@ set bg=dark
 " Always highlight. Disabled on OSX by default.
 syntax on
 
-" Auto-indent is more annoyance than aide.
-set noai
-
 " Wrap lines for an 80char term.
 " Mostly for git commit messages.
 set tw=76
