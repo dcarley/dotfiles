@@ -3,6 +3,7 @@ if command -v brew >/dev/null 2>&1; then
   [[ -f $(brew --prefix)/bin/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/bin/virtualenvwrapper_lazy.sh
 fi
 
+alias vi=vim
 alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
