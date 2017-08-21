@@ -10,6 +10,7 @@ alias curlh="curl -s -D- -o/dev/null"
 alias rake="noglob rake"
 
 export GOPATH=~/projects/gocode
+export PATH=${PATH}:${GOPATH}/bin
 CDPATH=.:$GOPATH/src/github.com
 
 alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
