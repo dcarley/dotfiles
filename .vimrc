@@ -33,6 +33,9 @@ set tabstop=2
 " Except for golang. Just make them look like 2sp.
 autocmd FileType go setlocal noexpandtab
 
+" Update imports when saving Go files.
+let g:go_fmt_command = "goimports"
+
 " Disable extra space when joining sentences.
 set nojoinspaces
 
