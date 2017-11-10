@@ -7,6 +7,8 @@ alias vi=vim
 alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
+# Pretty page JSON
+alias jless='jq -C . | less'
 # Allow square brackets for passing args.
 alias rake="noglob rake"
 
