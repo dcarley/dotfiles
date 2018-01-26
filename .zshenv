@@ -4,6 +4,9 @@ if command -v brew >/dev/null 2>&1; then
 fi
 
 alias vi=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
