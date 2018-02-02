@@ -1,7 +1,3 @@
-" Load pathogen for vim plugin management.
-" https://github.com/tpope/vim-pathogen
-execute pathogen#infect()
-
 " Enable plugin and indent rules from ftdetect.
 filetype plugin indent on
 
