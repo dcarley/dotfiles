@@ -2,6 +2,8 @@ require 'rake'
 require 'pathname'
 
 task :default do
+  sh "git submodule update --init --recursive"
+
   exclude = /(\.\.?|\.git|Rakefile)$/
   rake_dir = Pathname.new(__FILE__).parent
   target_dir = Pathname.new(ENV["HOME"])

@@ -1,11 +1,11 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-ZSH_THEME="robbyrussell"
 
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
+#
+# User configuration sourced by interactive shells
+#
 
-# Disable auto correct for commands and args.
-unsetopt correct_all
+# Change default zim location
+export ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+
+# Start zim
+[[ -s ${ZIM_HOME}/init.zsh ]] && source ${ZIM_HOME}/init.zsh

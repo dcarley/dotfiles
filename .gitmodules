@@ -1,0 +1,3 @@
+[submodule ".zim"]
+	path = .zim
+	url = git@github.com:zimfw/zimfw.git
