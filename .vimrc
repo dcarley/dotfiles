@@ -37,3 +37,6 @@ if has("folding")
   set nofoldenable
   let g:vim_markdown_folding_disabled=1
 endif
+
+" Use powerline font separators.
+let g:airline_powerline_fonts=1
