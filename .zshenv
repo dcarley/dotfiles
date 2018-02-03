@@ -7,6 +7,9 @@ alias vi=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# Use emacs mode to prevent vi mode from disabling ^R, ^[b, ^[f.
+bindkey -e
+
 alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
