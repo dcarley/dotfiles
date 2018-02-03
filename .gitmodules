@@ -1,3 +1,6 @@
 [submodule ".zim"]
 	path = .zim
 	url = git@github.com:zimfw/zimfw.git
+[submodule ".vim/pack/plugins/start/vim-go"]
+	path = .vim/pack/plugins/start/vim-go
+	url = git@github.com:fatih/vim-go.git
