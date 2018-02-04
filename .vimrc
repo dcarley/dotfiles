@@ -12,7 +12,7 @@ syntax on
 set tw=76
 
 " Spell check other things
-autocmd FileType gitcommit,rst setlocal spell
+autocmd FileType gitcommit,markdown,rst setlocal spell
 
 " Ignore unlimited tw from vim-markdown.
 autocmd FileType markdown setlocal tw=76

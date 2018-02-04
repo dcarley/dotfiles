@@ -7,3 +7,6 @@
 [submodule ".vim/pack/dist/start/vim-airline"]
 	path = .vim/pack/dist/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule ".vim/pack/plugins/start/vim-markdown"]
+	path = .vim/pack/plugins/start/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
