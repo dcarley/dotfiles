@@ -1,8 +1,3 @@
-if command -v brew >/dev/null 2>&1; then
-  [[ -d $(brew --prefix)/share/python ]] && PATH="$(brew --prefix)/share/python:$PATH"
-  [[ -f $(brew --prefix)/bin/virtualenvwrapper_lazy.sh ]] && . $(brew --prefix)/bin/virtualenvwrapper_lazy.sh
-fi
-
 alias vi=vim
 export VISUAL=vim
 export EDITOR="$VISUAL"
