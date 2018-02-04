@@ -40,3 +40,7 @@ endif
 
 " Use powerline font separators.
 let g:airline_powerline_fonts=1
+
+" Display buffers at top.
+let g:airline#extensions#tabline#enabled=1
+let airline#extensions#tabline#buffer_nr_show=1
