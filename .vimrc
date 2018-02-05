@@ -26,8 +26,9 @@ set tabstop=2
 " Except for golang. Just make them look like 2sp.
 autocmd FileType go setlocal noexpandtab
 
-" Update imports when saving Go files.
+" Automatic formatting.
 let g:go_fmt_command = "goimports"
+let g:terraform_fmt_on_save=1
 
 " Disable extra space when joining sentences.
 set nojoinspaces
