@@ -5,7 +5,7 @@
 	path = .vim/pack/plugins/start/vim-go
 	url = git@github.com:fatih/vim-go.git
 [submodule ".vim/pack/dist/start/vim-airline"]
-	path = .vim/pack/dist/start/vim-airline
+	path = .vim/pack/plugins/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
 [submodule ".vim/pack/plugins/start/vim-markdown"]
 	path = .vim/pack/plugins/start/vim-markdown
