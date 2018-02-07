@@ -1,3 +1,4 @@
 .bundle/cache
 .vim/.netrwhist
 .vim/tags
+.ssh/
