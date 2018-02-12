@@ -9,7 +9,7 @@ alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
 # Pretty page JSON
-alias jless='jq -C . | less'
+alias jless='jq -C . | less -R'
 # Allow square brackets for passing args.
 alias rake="noglob rake"
 
