@@ -15,6 +15,9 @@
 [mergetool]
     prompt = false
 
+[interactive]
+    singlekey = true
+
 [alias]
     # Alias some shorthand commands like SVN.
     st = status
