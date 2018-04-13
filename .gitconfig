@@ -31,7 +31,7 @@
     # push/pull only the current branch.
     # Serves "push.default = tracking" behaviour for <1.6.3 clients.
     # Ref: http://stackoverflow.com/a/2444495
-    bpush = "!f() { git push ${1:-origin} $(git symbolic-ref HEAD); }; f"
+    bpush = "!f() { git push --set-upstream ${1:-origin} $(git symbolic-ref HEAD); }; f"
     bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
 
     # Force `stash pop` on a dirty tree.
