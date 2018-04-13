@@ -51,7 +51,7 @@
     # Grab a pull request as a local branch.
     pr = "!f() { \
       [ $# -eq "1" ] && REMOTE=origin PR=$1 || REMOTE=$1 PR=$2; \
-      git fetch ${REMOTE} refs/pull/${PR}/head:pr/${PR}; \
+      git fetch ${REMOTE} refs/pull/${PR}/head:pr/${PR} && git checkout pr/${PR}; \
     }; f"
 
 [push]
