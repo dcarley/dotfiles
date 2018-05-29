@@ -13,7 +13,7 @@ alias jless='jq -C . | less -R'
 # Allow square brackets for passing args.
 alias rake="noglob rake"
 
-export GOPATH=~/projects/gocode
+export GOPATH=~/projects/go
 export PATH=${PATH}:${GOPATH}/bin
 CDPATH=.:$GOPATH/src/github.com
 
