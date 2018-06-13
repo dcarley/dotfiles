@@ -13,3 +13,6 @@
 [submodule ".vim/pack/plugins/start/vim-terraform"]
 	path = .vim/pack/plugins/start/vim-terraform
 	url = git@github.com:hashivim/vim-terraform.git
+[submodule ".vim/pack/plugins/start/auto-pairs"]
+	path = .vim/pack/plugins/start/auto-pairs
+	url = git@github.com:jiangmiao/auto-pairs.git
