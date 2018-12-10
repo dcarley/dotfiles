@@ -1,7 +1,0 @@
---type-set=puppet=.pp
---type-set=gotest:match:_test.go
---type-set=tf=.tf
---ignore-dir=vendor
---ignore-dir=.tmp
---ignore-dir=.rsync_cache
---ignore-dir=coverage
