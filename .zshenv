@@ -1,5 +1,5 @@
-alias vi=vim
-export VISUAL=vim
+alias vi=emacs
+export VISUAL=emacs
 export EDITOR="$VISUAL"
 
 # Use emacs mode to prevent vi mode from disabling ^R, ^[b, ^[f.
