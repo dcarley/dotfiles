@@ -1,3 +1,5 @@
+set backspace=indent,eol,start
+
 " Enable plugin and indent rules from ftdetect.
 filetype plugin indent on
 
