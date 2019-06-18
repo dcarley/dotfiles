@@ -22,3 +22,6 @@
 [submodule ".vim/pack/plugins/start/vim-solarized8"]
 	path = .vim/pack/plugins/start/vim-solarized8
 	url = git@github.com:lifepillar/vim-solarized8.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:hlissner/doom-emacs.git
