@@ -19,3 +19,6 @@
 [submodule ".vim/pack/plugins/start/vim-bracketed-paste"]
 	path = .vim/pack/plugins/start/vim-bracketed-paste
 	url = git@github.com:ConradIrwin/vim-bracketed-paste.git
+[submodule ".vim/pack/plugins/start/vim-solarized8"]
+	path = .vim/pack/plugins/start/vim-solarized8
+	url = git@github.com:lifepillar/vim-solarized8.git
