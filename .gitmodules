@@ -1,27 +1,6 @@
 [submodule ".zim"]
 	path = .zim
 	url = git@github.com:zimfw/zimfw.git
-[submodule ".vim/pack/plugins/start/vim-go"]
-	path = .vim/pack/plugins/start/vim-go
-	url = git@github.com:fatih/vim-go.git
-[submodule ".vim/pack/dist/start/vim-airline"]
-	path = .vim/pack/plugins/start/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
-[submodule ".vim/pack/plugins/start/vim-markdown"]
-	path = .vim/pack/plugins/start/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
-[submodule ".vim/pack/plugins/start/vim-terraform"]
-	path = .vim/pack/plugins/start/vim-terraform
-	url = git@github.com:hashivim/vim-terraform.git
-[submodule ".vim/pack/plugins/start/auto-pairs"]
-	path = .vim/pack/plugins/start/auto-pairs
-	url = git@github.com:jiangmiao/auto-pairs.git
-[submodule ".vim/pack/plugins/start/vim-bracketed-paste"]
-	path = .vim/pack/plugins/start/vim-bracketed-paste
-	url = git@github.com:ConradIrwin/vim-bracketed-paste.git
-[submodule ".vim/pack/plugins/start/vim-solarized8"]
-	path = .vim/pack/plugins/start/vim-solarized8
-	url = git@github.com:lifepillar/vim-solarized8.git
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = git@github.com:hlissner/doom-emacs.git
