@@ -16,3 +16,6 @@
 [submodule ".vim/pack/plugins/start/auto-pairs"]
 	path = .vim/pack/plugins/start/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule ".vim/pack/plugins/start/vim-bracketed-paste"]
+	path = .vim/pack/plugins/start/vim-bracketed-paste
+	url = git@github.com:ConradIrwin/vim-bracketed-paste.git
