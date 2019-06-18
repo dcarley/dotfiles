@@ -35,6 +35,8 @@
     bpush = "!f() { git push --set-upstream ${1:-origin} $(git symbolic-ref HEAD); }; f"
     bpull = "!f() { git pull ${1:-origin} $(git symbolic-ref HEAD); }; f"
 
+    fpush = "push --force-with-lease"
+
     # Force `stash pop` on a dirty tree.
     # Ref: http://stackoverflow.com/a/3733698
     fpop = "!f() { git stash show -p | git apply && git stash drop; }; f"
