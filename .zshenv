@@ -1,3 +1,4 @@
+alias emacs="emacs -nw"
 alias vi=emacs
 export VISUAL=emacs
 export EDITOR="$VISUAL"
