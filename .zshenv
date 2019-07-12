@@ -21,3 +21,6 @@ CDPATH=.:$GOPATH/src/github.com
 alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
 
 export GPG_TTY=$(tty)
+
+export AWS_VAULT_BACKEND=pass
+export AWS_VAULT_PASS_PREFIX=aws-vault/
