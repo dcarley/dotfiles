@@ -22,5 +22,8 @@ alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
 
 export GPG_TTY=$(tty)
 
+if [ -x "$(command -v osascript)" ]; then
+  export AWS_VAULT_PROMPT=osascript
+fi
 export AWS_VAULT_BACKEND=pass
 export AWS_VAULT_PASS_PREFIX=aws-vault/
