@@ -4,3 +4,6 @@
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 (setq projectile-project-search-path '("~/projects/go/src/github.com/dcarley/"
                                        "~/projects/go/src/github.com/circleci/"))
+
+;; https://docs.cider.mx/cider/caveats.html#_injecting_dependencies_and_leiningen_pedantic_abort_mode
+(setq cider-inject-dependencies-at-jack-in nil)
