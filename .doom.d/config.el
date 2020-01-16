@@ -5,5 +5,8 @@
 (setq projectile-project-search-path '("~/projects/go/src/github.com/dcarley/"
                                        "~/projects/go/src/github.com/circleci/"))
 
+;; Don't prompt for C-c C-k
+(setq cider-save-file-on-load t)
+
 ;; https://docs.cider.mx/cider/caveats.html#_injecting_dependencies_and_leiningen_pedantic_abort_mode
 (setq cider-inject-dependencies-at-jack-in nil)
