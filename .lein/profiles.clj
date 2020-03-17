@@ -4,6 +4,10 @@
         :aliases {
                   "ktest" ["run" "-m" "kaocha.runner" "--reporter" "kaocha.report.progress/report"]
                   }
+        :plugins [
+                  [lein-pprint "1.2.0"]
+                  [circleci/deps-plus "0.1.0-SNAPSHOT"]
+                  ]
         }
  :repl {:dependencies [
                        [nrepl "0.6.0"]
