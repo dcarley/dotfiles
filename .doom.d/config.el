@@ -13,3 +13,4 @@
 
 ;; https://docs.cider.mx/cider/caveats.html#_injecting_dependencies_and_leiningen_pedantic_abort_mode
 (setq cider-inject-dependencies-at-jack-in nil)
+(setq cljr-suppress-middleware-warnings t)

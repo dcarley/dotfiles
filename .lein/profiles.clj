@@ -3,12 +3,5 @@
                   [circleci/deps-plus "0.1.0-SNAPSHOT"]
                   ]
         }
- :repl {:dependencies [
-                       [nrepl "0.6.0"]
-                       ]
-        :plugins [
-                  [cider/cider-nrepl "0.24.0"]
-                  [refactor-nrepl "2.5.0"]
-                  ]
-        }
- }
+ :repl {:dependencies [[nrepl "0.6.0"]]
+        :plugins [[cider/cider-nrepl "0.24.0"]]}}
