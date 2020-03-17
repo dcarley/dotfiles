@@ -1,10 +1,4 @@
-{:user {:dependencies [
-                       [lambdaisland/kaocha "0.0-554" :exclusions [org.clojure/tools.cli]]
-                       ]
-        :aliases {
-                  "ktest" ["run" "-m" "kaocha.runner" "--reporter" "kaocha.report.progress/report"]
-                  }
-        :plugins [
+{:user {:plugins [
                   [lein-pprint "1.2.0"]
                   [circleci/deps-plus "0.1.0-SNAPSHOT"]
                   ]
