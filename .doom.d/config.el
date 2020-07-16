@@ -11,6 +11,9 @@
 ;; Don't prompt for C-c C-k
 (setq cider-save-file-on-load t)
 
+;; Don't jump to warnings for C-c C-k
+(setq cider-auto-jump-to-error 'errors-only)
+
 ;; https://docs.cider.mx/cider/caveats.html#_injecting_dependencies_and_leiningen_pedantic_abort_mode
 (setq cider-inject-dependencies-at-jack-in nil)
 (setq cljr-suppress-middleware-warnings t)
