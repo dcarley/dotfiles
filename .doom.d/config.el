@@ -20,3 +20,15 @@
 
 ;; Want to know when tests have finished
 (setq cider-test-show-report-on-success t)
+
+;; https://github.com/noctuid/lispyville#key-themes
+(setq lispyville-key-theme
+      '((operators normal)
+        c-w
+        (prettify insert)
+        (atom-movement normal visual)
+        slurp/barf-lispy
+        additional
+        additional-insert
+        ;; custom
+        additional-movement))
