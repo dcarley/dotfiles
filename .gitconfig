@@ -6,6 +6,9 @@
     # Use nice syntax highlighting everywhere.
     ui = true
 
+[pull]
+    ff = only
+
 [rebase]
     autosquash = true
     abbreviateCommands = true
