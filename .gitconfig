@@ -2,6 +2,9 @@
     name = Dan Carley
     email = dan.carley@gmail.com
 
+[core]
+    excludesfile = ~/.gitignore
+
 [color]
     # Use nice syntax highlighting everywhere.
     ui = true
