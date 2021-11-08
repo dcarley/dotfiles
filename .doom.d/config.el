@@ -30,3 +30,6 @@
         additional-insert
         ;; custom
         additional-movement))
+
+;; Don't go straight to file finder.
+(setq +workspaces-switch-project-function #'magit-status)
