@@ -29,8 +29,6 @@ CDPATH=.:$GOPATH/src/github.com
 
 alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
 
-export GPG_TTY=$(tty)
-
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 if [ -e /Users/dcarley/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/dcarley/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
