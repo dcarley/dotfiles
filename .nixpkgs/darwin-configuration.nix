@@ -37,6 +37,10 @@
       gnupg
     ]);
 
+  environment.variables = {
+    JAVA_HOME = "/run/current-system/sw";
+  };
+
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
