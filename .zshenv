@@ -24,7 +24,6 @@ alias jless='jq -C . | less -R'
 alias rake="noglob rake"
 
 export GOPATH=~/projects/go
-export PATH=${PATH}:${GOPATH}/bin
 CDPATH=.:$GOPATH/src/github.com
 
 alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
