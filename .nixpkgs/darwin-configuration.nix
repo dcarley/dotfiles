@@ -9,7 +9,7 @@ let
 in {
   environment.systemPackages =
     (with stable; [
-      emacsMacport
+      emacs
       # editor deps
       aspell
       ripgrep
