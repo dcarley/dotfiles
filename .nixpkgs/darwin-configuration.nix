@@ -35,7 +35,7 @@ in {
       unstable.httpie
       jq
 
-      tmux
+      kitty
       coreutils
       vim
 
