@@ -57,6 +57,23 @@ in {
 
   programs.gnupg.agent.enable = true;
 
+  system.defaults.dock = {
+    autohide = true;
+    tilesize = 64;
+    static-only = true;
+    mru-spaces = false;
+  };
+
+  system.keyboard = {
+    enableKeyMapping = true;
+    remapCapsLockToControl = true;
+  };
+
+  system.defaults.trackpad = {
+    Clicking = true;
+    TrackpadThreeFingerDrag = true;
+  };
+
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
