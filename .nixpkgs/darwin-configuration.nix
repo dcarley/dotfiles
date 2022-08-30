@@ -17,7 +17,7 @@ in {
       fd
       shellcheck
 
-      adoptopenjdk-hotspot-bin-8
+      jdk11
       leiningen
       babashka
       # editor deps
