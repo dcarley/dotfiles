@@ -32,7 +32,7 @@ in {
       gotests
       gore
 
-      httpie
+      unstable.httpie
       jq
 
       tmux
