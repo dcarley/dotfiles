@@ -1,8 +1,14 @@
 { config, pkgs, ... }:
 
-{
+let
+  # https://status.nixos.org/
+  # channel:nixos-22.05
+  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/cc634d9aa08ed89c9ff655de06ab2e593c72ebc1.tar.gz") {};
+  # channel:nixos-unstable
+  unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/a63021a330d8d33d862a8e29924b42d73037dd37.tar.gz") {};
+in {
   environment.systemPackages =
-    (with pkgs; [
+    (with stable; [
       emacsMacport
       # editor deps
       aspell
