@@ -46,6 +46,7 @@ in {
       vegeta
 
       kitty
+      fzf
       coreutils
       vim
 
