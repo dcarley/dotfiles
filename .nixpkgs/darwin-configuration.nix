@@ -9,6 +9,13 @@ let
 in {
   environment.systemPackages =
     (with stable; [
+      # Installed manually:
+      # Chrome
+      # 1password
+      # Docker for Mac
+      # Zoom
+      # Spotify
+
       emacs
       # editor deps
       aspell
