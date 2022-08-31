@@ -25,6 +25,7 @@ in {
       clj-kondo
 
       go
+      ginkgo
       # editor deps
       gopls
       gocode
@@ -34,6 +35,8 @@ in {
 
       unstable.httpie
       jq
+      yq-go
+      vegeta
 
       kitty
       coreutils
@@ -41,6 +44,14 @@ in {
 
       pass
       gnupg
+
+      minikube
+      kubectl
+      kubernetes-helm
+      stern
+
+      aws-iam-authenticator
+      awscli2
     ]);
 
   environment.variables = {
