@@ -2,8 +2,8 @@
 
 ;; Place your private configuration here
 (add-hook 'text-mode-hook 'turn-on-visual-line-mode)
-(setq projectile-project-search-path '("~/projects/go/src/github.com/dcarley/"
-                                       "~/projects/go/src/github.com/circleci/"))
+(setq projectile-project-search-path '("~/projects/dcarley/"
+                                       "~/projects/circleci/"))
 
 ;; Don't prompt for C-c C-k
 (setq cider-save-file-on-load t)

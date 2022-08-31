@@ -23,8 +23,14 @@ alias jless='jq -C . | less -R'
 # Allow square brackets for passing args.
 alias rake="noglob rake"
 
-export GOPATH=~/projects/go
-CDPATH=.:$GOPATH/src/github.com
+gc() {
+    org=$1
+    repo=$2
+    dir=~/projects/${org}/${repo}
+    mkdir -p ${dir}
+    git clone git@github.com:${org}/${repo} ${dir}
+}
+CDPATH=.:~/projects
 
 alias drun='docker run --rm -ti -v $(pwd):/mnt -w /mnt'
 
