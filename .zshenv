@@ -7,8 +7,6 @@
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 # }}} End configuration added by Zim install
 
-alias emacs="emacs -nw"
-alias vi=emacs
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
