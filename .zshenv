@@ -15,13 +15,10 @@ export EDITOR="$VISUAL"
 # Use emacs mode to prevent vi mode from disabling ^R, ^[b, ^[f.
 bindkey -e
 
-alias b="bundle exec"
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
 # Pretty page JSON
 alias jless='jq -C . | less -R'
-# Allow square brackets for passing args.
-alias rake="noglob rake"
 
 gc() {
     org=$1
