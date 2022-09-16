@@ -3,7 +3,7 @@
 let
   # https://status.nixos.org/
   # channel:nixos-22.05
-  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/cc634d9aa08ed89c9ff655de06ab2e593c72ebc1.tar.gz") {};
+  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/178fea1414ae708a5704490f4c49ec3320be9815.tar.gz") {};
   # channel:nixos-unstable
   unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/a63021a330d8d33d862a8e29924b42d73037dd37.tar.gz") {};
 in {
@@ -31,7 +31,7 @@ in {
       clojure-lsp
       clj-kondo
 
-      go
+      go_1_18
       ginkgo
       # editor deps
       gopls
@@ -45,7 +45,7 @@ in {
       yq-go
       vegeta
 
-      kitty
+      unstable.kitty
       fzf
       coreutils
       vim
