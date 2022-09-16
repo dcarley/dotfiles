@@ -10,9 +10,6 @@
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
-# Use emacs mode to prevent vi mode from disabling ^R, ^[b, ^[f.
-bindkey -e
-
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
 # Pretty page JSON
