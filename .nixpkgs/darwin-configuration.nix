@@ -76,6 +76,10 @@ in {
 
   programs.gnupg.agent.enable = true;
 
+  system.patches = [
+    ./sudo.patch
+  ];
+
   system.defaults.dock = {
     autohide = true;
     tilesize = 64;
