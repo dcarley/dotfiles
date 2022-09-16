@@ -10,6 +10,7 @@
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
+alias kc=kubectl
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
 # Pretty page JSON
