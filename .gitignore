@@ -3,3 +3,4 @@
 .lein/
 .lsp/
 .clj-kondo/*cache*
+.config/AWSVPNClient
