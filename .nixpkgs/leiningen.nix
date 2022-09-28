@@ -3,16 +3,16 @@
 
 stdenv.mkDerivation rec {
   pname = "leiningen";
-  version = "2.9.8";
+  version = "2.9.10";
 
   src = fetchurl {
     url = "https://raw.github.com/technomancy/leiningen/${version}/bin/lein-pkg";
-    sha256 = "1sgnxw58srjxqnskl700p7r7n23pfpjvqpiqnz1m8r6c76jwnllr";
+    hash = "sha256-27hNE9bfW4W79/iaOdru0QMTPCSkaG0Df+a9ZeOOfzI=";
   };
 
   jarsrc = fetchurl {
     url = "https://github.com/technomancy/leiningen/releases/download/${version}/${pname}-${version}-standalone.jar";
-    sha256 = "13f4n15i0gsk9jq52gxivnsk32qjahmxgrddm54cf8ynw0a923ia";
+    hash = "sha256-oihTDwC1B1Os/dw944oNc3tvXBrsSa8gLnCgrSjCSck=";
   };
 
   JARNAME = "${pname}-${version}-standalone.jar";
