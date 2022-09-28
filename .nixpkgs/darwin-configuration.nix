@@ -25,7 +25,7 @@ in {
       shellcheck
 
       jdk11
-      leiningen
+      ( callPackage ./leiningen.nix { jdk = jdk11; } )
       babashka
       # editor deps
       clojure-lsp
