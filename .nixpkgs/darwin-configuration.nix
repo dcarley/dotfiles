@@ -2,10 +2,10 @@
 
 let
   # https://status.nixos.org/
-  # channel:nixos-22.05
-  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/178fea1414ae708a5704490f4c49ec3320be9815.tar.gz") {};
+  # channel:nixos-23.11
+  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz") {};
   # channel:nixos-unstable
-  unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/a63021a330d8d33d862a8e29924b42d73037dd37.tar.gz") {};
+  unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/1536926ef5621b09bba54035ae2bb6d806d72ac8.tar.gz") {};
 in {
   environment.systemPackages =
     (with stable; [
@@ -24,7 +24,7 @@ in {
       fd
       shellcheck
 
-      go_1_18
+      go
       ginkgo
       # editor deps
       gopls
@@ -33,12 +33,12 @@ in {
       gotests
       gore
 
-      unstable.httpie
+      httpie
       jq
       yq-go
       vegeta
 
-      unstable.kitty
+      kitty
       fzf
       coreutils
       vim
