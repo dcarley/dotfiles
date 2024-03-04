@@ -24,13 +24,6 @@ in {
       fd
       shellcheck
 
-      jdk11
-      ( callPackage ./leiningen.nix { jdk = jdk11; } )
-      babashka
-      # editor deps
-      clojure-lsp
-      clj-kondo
-
       go_1_18
       ginkgo
       # editor deps
@@ -61,10 +54,6 @@ in {
       aws-iam-authenticator
       awscli2
     ]);
-
-  environment.variables = {
-    JAVA_HOME = "/run/current-system/sw";
-  };
 
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
