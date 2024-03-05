@@ -1,14 +1,6 @@
-{ config, pkgs, ... }:
-
-let
-  # https://status.nixos.org/
-  # channel:nixos-23.11
-  stable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-23.11.tar.gz") {};
-  # channel:nixos-unstable
-  unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/1536926ef5621b09bba54035ae2bb6d806d72ac8.tar.gz") {};
-in {
+{ pkgs, inputs, ... }: {
   environment.systemPackages =
-    (with stable; [
+    (with pkgs; [
       # Installed manually:
       # Chrome
       # 1password
@@ -84,7 +76,16 @@ in {
     TrackpadThreeFingerDrag = true;
   };
 
+  # Necessary for using flakes on this system.
+  nix.settings.experimental-features = "nix-command flakes";
+
+  # Set Git commit hash for darwin-version.
+  system.configurationRevision = inputs.rev or inputs.dirtyRev or null;
+
   # Used for backwards compatibility, please read the changelog before changing.
   # $ darwin-rebuild changelog
   system.stateVersion = 4;
+
+  # The platform the configuration will be used on.
+  nixpkgs.hostPlatform = "x86_64-darwin";
 }
