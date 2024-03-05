@@ -12,7 +12,12 @@
   outputs = inputs@{ self, nix-darwin, nixpkgs }: {
     darwinConfigurations.mbp13 = nix-darwin.lib.darwinSystem {
       specialArgs = { inherit inputs; };
-      modules = [ ./nix/darwin.nix ];
+      modules = [
+        ./nix/darwin.nix
+        {
+          nixpkgs.hostPlatform = "x86_64-darwin";
+        }
+      ];
     };
 
     # Expose the package set, including overlays, for convenience.
