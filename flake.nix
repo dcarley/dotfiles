@@ -19,8 +19,14 @@
         }
       ];
     };
-
-    # Expose the package set, including overlays, for convenience.
-    darwinPackages = self.darwinConfigurations.mbp13.pkgs;
+    darwinConfigurations.mbp16 = nix-darwin.lib.darwinSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./nix/darwin.nix
+        {
+          nixpkgs.hostPlatform = "x86_64-darwin";
+        }
+      ];
+    };
   };
 }
