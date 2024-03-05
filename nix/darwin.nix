@@ -18,7 +18,9 @@
 
       go
       ginkgo
+      go-task
       # editor deps
+      gotools
       gopls
       gocode
       gomodifytags
