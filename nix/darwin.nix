@@ -49,6 +49,10 @@
       awscli2
     ]);
 
+  environment.variables = {
+    ASPELL_CONF = "dict-dir ${pkgs.aspellDicts.en}/lib/aspell";
+  };
+
   # Auto upgrade nix package and the daemon service.
   services.nix-daemon.enable = true;
   # nix.package = pkgs.nix;
