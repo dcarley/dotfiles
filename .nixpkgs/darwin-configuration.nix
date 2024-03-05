@@ -65,9 +65,7 @@ in {
 
   programs.gnupg.agent.enable = true;
 
-  system.patches = [
-    ./sudo.patch
-  ];
+  security.pam.enableSudoTouchIdAuth = true;
 
   system.defaults.dock = {
     autohide = true;
