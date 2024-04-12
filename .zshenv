@@ -36,3 +36,5 @@ if [ -n "${commands[fzf-share]}" ]; then
 fi
 
 if [ -e /Users/dcarley/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/dcarley/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+eval "$(direnv hook zsh)"

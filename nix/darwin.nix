@@ -16,16 +16,8 @@
       fd
       shellcheck
 
-      go
-      ginkgo
-      go-task
-      # editor deps
-      gotools
-      gopls
-      gocode
-      gomodifytags
-      gotests
-      gore
+      direnv
+      nix-direnv
 
       httpie
       jq
