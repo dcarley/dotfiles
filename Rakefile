@@ -12,7 +12,6 @@ task :default do
   FileList[".*", "*"].exclude(exclude).each do |dotfile|
     target = File.join(target_dir, dotfile)
     source = File.join(source_dir, dotfile)
-    source_abs = File.join(rake_dir, dotfile)
 
     if File.symlink?(target) and File.readlink(target) == source
       next
