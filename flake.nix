@@ -7,9 +7,12 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    flox = {
+      url = "github:flox/flox";
+    };
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }: {
+  outputs = inputs@{ self, nix-darwin, nixpkgs, flox }: {
     darwinConfigurations.mbp13 = nix-darwin.lib.darwinSystem {
       specialArgs = { inherit inputs; };
       modules = [
@@ -21,6 +24,15 @@
     };
     darwinConfigurations.mbp16 = nix-darwin.lib.darwinSystem {
       specialArgs = { inherit inputs; };
+      modules = [
+        ./nix/darwin.nix
+        {
+          nixpkgs.hostPlatform = "aarch64-darwin";
+        }
+      ];
+    };
+    darwinConfigurations.mba15 = nix-darwin.lib.darwinSystem {
+      specialArgs = { inherit inputs flox; };
       modules = [
         ./nix/darwin.nix
         {

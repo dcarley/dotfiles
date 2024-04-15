@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, inputs, flox, ... }: {
   environment.systemPackages =
     (with pkgs; [
       # Installed manually:
@@ -18,6 +18,7 @@
 
       direnv
       nix-direnv
+      flox.packages.${pkgs.system}.default
 
       httpie
       jq
@@ -75,7 +76,16 @@
   };
 
   # Necessary for using flakes on this system.
-  nix.settings.experimental-features = "nix-command flakes";
+  nix.settings = {
+    experimental-features = "nix-command flakes";
+    # https://flox.dev/docs/install-flox/#__tabbed_1_5
+    substituters = [
+      "https://cache.flox.dev"
+    ];
+    trusted-public-keys = [
+      "flox-cache-public-1:7F4OyH7ZCnFhcze3fJdfyXYLQw/aV7GEed86nQ7IsOs="
+    ];
+  };
 
   # Set Git commit hash for darwin-version.
   system.configurationRevision = inputs.rev or inputs.dirtyRev or null;
