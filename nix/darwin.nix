@@ -26,6 +26,7 @@
       vegeta
 
       kitty
+      watchexec
       fzf
       coreutils
       vim
