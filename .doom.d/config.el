@@ -5,6 +5,9 @@
 (setq projectile-project-search-path '("~/projects/dcarley/"
                                        "~/projects/flox/"))
 
+;; Change comments from light grey.
+(setq doom-one-brighter-comments t)
+
 ;; Don't prompt for C-c C-k
 (setq cider-save-file-on-load t)
 
