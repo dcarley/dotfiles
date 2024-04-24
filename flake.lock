@@ -65,15 +65,16 @@
         "sqlite3pp": "sqlite3pp"
       },
       "locked": {
-        "lastModified": 1712966442,
-        "narHash": "sha256-nlO+mWfu8Tv08bfJlwucx/fIDPoZZIJfthri01qsngQ=",
+        "lastModified": 1713890766,
+        "narHash": "sha256-KOS4+1fN+/lUXydZRknW0DansEkNGizI9FTYuUf+qYU=",
         "owner": "flox",
         "repo": "flox",
-        "rev": "a8cc066716c97b266306ffa3fd9cf98f74751b56",
+        "rev": "5c6e74e538144c493b40fbf2b606dcea33291344",
         "type": "github"
       },
       "original": {
         "owner": "flox",
+        "ref": "v1.0.4",
         "repo": "flox",
         "type": "github"
       }
