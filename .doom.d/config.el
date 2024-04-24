@@ -38,5 +38,6 @@
 (setq +workspaces-switch-project-function #'magit-status)
 
 ;; https://github.com/radian-software/apheleia/issues/278
-(setf (alist-get 'rustfmt  apheleia-formatters)
-      '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2021"))
+(after! apheleia
+  (setf (alist-get 'rustfmt  apheleia-formatters)
+        '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2021")))
