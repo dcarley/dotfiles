@@ -8,7 +8,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flox = {
-      url = "github:flox/flox/v1.0.4";
+      url = "github:flox/flox/v1.0.5";
     };
   };
 
