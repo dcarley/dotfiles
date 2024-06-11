@@ -10,6 +10,9 @@
 export VISUAL=emacs
 export EDITOR="$VISUAL"
 
+# Don't muddy stats with Flox employees.
+export FLOX_DISABLE_METRICS="true"
+
 alias kc=kubectl
 # Output headers only from GET
 alias curlh="curl -s -D- -o/dev/null"
