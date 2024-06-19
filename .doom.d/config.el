@@ -41,3 +41,7 @@
 (after! apheleia
   (setf (alist-get 'rustfmt  apheleia-formatters)
         '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2021")))
+
+(after! lsp-mode
+  (setq lsp-inlay-hint-enable t
+        lsp-rust-clippy-preference "on"))
