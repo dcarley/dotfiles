@@ -30,17 +30,6 @@
       fzf
       coreutils
       vim
-
-      pass
-      gnupg
-
-      minikube
-      kubectl
-      kubernetes-helm
-      stern
-
-      aws-iam-authenticator
-      awscli2
     ]);
 
   environment.variables = {
