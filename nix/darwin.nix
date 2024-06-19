@@ -1,4 +1,11 @@
-{ pkgs, inputs, flox, ... }: {
+{ pkgs, inputs, flox, ... }:
+let
+  floxApps = [
+    { name = "flox-kitty"; command = "flox activate -r dcarley/shell -- kitty"; }
+    { name = "flox-emacs"; command = "flox activate -r dcarley/emacs -- emacs"; }
+  ];
+in
+{
   environment.systemPackages =
     (with pkgs; [
       # Installed manually:
@@ -8,29 +15,14 @@
       # Zoom
       # Spotify
 
-      emacs
-      # editor deps
-      aspell
-      ripgrep
-      git
-      fd
-      shellcheck
-
-      direnv
-      nix-direnv
       flox.packages.${pkgs.system}.default
-
-      httpie
-      jq
-      yq-go
-      vegeta
-
-      kitty
-      watchexec
-      fzf
-      coreutils
-      vim
     ]);
+
+  system.activationScripts.postActivation = {
+    text = builtins.concatStringsSep "\n" (map (app: ''
+      osacompile -o /Applications/${app.name}.app -e 'do shell script "zsh -l -c \"${app.command}\""'
+    '') floxApps);
+  };
 
   environment.variables = {
     ASPELL_CONF = "dict-dir ${pkgs.aspellDicts.en}/lib/aspell";
