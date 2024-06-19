@@ -23,7 +23,6 @@ gc() {
     org=$1
     repo=$2
     dir=~/projects/${org}/${repo}
-    mkdir -p ${dir}
     git clone git@github.com:${org}/${repo} ${dir}
 }
 CDPATH=.:~/projects
