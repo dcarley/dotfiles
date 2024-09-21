@@ -1,4 +1,4 @@
-{ pkgs, inputs, flox, ... }:
+{ pkgs, inputs, ... }:
 let
   floxApps = [
     { name = "flox-kitty"; command = "flox activate -r dcarley/shell -- kitty"; }
@@ -15,7 +15,7 @@ in
       # Zoom
       # Spotify
 
-      flox.packages.${pkgs.system}.default
+      inputs.flox.packages.${pkgs.system}.default
     ]);
 
   system.activationScripts.postActivation = {

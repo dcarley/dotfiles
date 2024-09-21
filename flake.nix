@@ -32,7 +32,7 @@
       ];
     };
     darwinConfigurations.mba15 = nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit inputs flox; };
+      specialArgs = { inherit inputs; };
       modules = [
         ./nix/darwin.nix
         {
