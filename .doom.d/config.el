@@ -5,6 +5,10 @@
 (setq projectile-project-search-path '("~/projects/dcarley/"
                                        "~/projects/flox/"))
 
+;; Auto-install font. Can't use custom oath from Flox provided `nerdfonts`.
+(unless (member "Symbols Nerd Font Mono" (font-family-list))
+  (nerd-icons-install-fonts t))
+
 ;; Change comments from light grey.
 (setq doom-one-brighter-comments t)
 
