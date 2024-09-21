@@ -19,6 +19,10 @@ alias curlh="curl -s -D- -o/dev/null"
 # Pretty page JSON
 alias jless='jq -C . | less -R'
 
+ft() {
+    flox "$1" --dir ~/tmp "${@:2}"
+}
+
 gc() {
     org=$1
     repo=$2
