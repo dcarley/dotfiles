@@ -36,3 +36,12 @@
 (after! lsp-mode
   (setq lsp-inlay-hint-enable t
         lsp-rust-clippy-preference "on"))
+
+;; https://github.com/doomemacs/doomemacs/issues/581#issuecomment-645448095
+(defun doom/ediff-init-and-example ()
+  "ediff the current `init.el' with the example in doom-user-dir"
+  (interactive)
+  (ediff-files (concat doom-user-dir "init.el")
+               (concat doom-emacs-dir "templates/init.example.el")))
+(define-key! help-map
+  "di" #'doom/ediff-init-and-example)
