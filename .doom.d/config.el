@@ -15,8 +15,18 @@
 ;; Don't go straight to file finder.
 (setq +workspaces-switch-project-function #'magit-status)
 
-;; https://github.com/radian-software/apheleia/issues/278
+(use-package! copilot
+  :hook (prog-mode . copilot-mode)
+  :bind (:map copilot-completion-map
+              ("<tab>" . 'copilot-accept-completion)
+              ("TAB" . 'copilot-accept-completion)
+              ("C-TAB" . 'copilot-accept-completion-by-word)
+              ("C-<tab>" . 'copilot-accept-completion-by-word)))
+
+;; (use-package! copilot-chat)
+
 (after! apheleia
+  ;; https://github.com/radian-software/apheleia/issues/278
   (setf (alist-get 'rustfmt  apheleia-formatters)
         '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2021")))
 
