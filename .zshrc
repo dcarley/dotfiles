@@ -121,3 +121,6 @@ bindkey '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
+
+# Don't require quoting hash characters in commands.
+unsetopt EXTENDED_GLOB
