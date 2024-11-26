@@ -35,7 +35,12 @@
 
 (after! lsp-mode
   (setq lsp-inlay-hint-enable t
-        lsp-rust-clippy-preference "on"))
+        lsp-rust-clippy-preference "on")
+  ;; https://github.com/emacs-lsp/lsp-mode/pull/4620
+  ;; (setq lsp-bash-allowed-shells '(sh bash bats))
+  (defun my-lsp-bash-check-sh-shell (&rest _)
+    (memq sh-shell '(sh bash bats)))
+  (advice-add #'lsp-bash-check-sh-shell :override #'my-lsp-bash-check-sh-shell))
 
 ;; https://github.com/doomemacs/doomemacs/issues/581#issuecomment-645448095
 (defun doom/ediff-init-and-example ()
