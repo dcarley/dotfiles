@@ -30,7 +30,6 @@ bindkey -e
 # Remove path separator from WORDCHARS.
 WORDCHARS=${WORDCHARS//[\/]}
 
-
 # --------------------
 # Module configuration
 # --------------------
@@ -101,6 +100,9 @@ source ${ZIM_HOME}/init.zsh
 # Post-init module configuration
 # ------------------------------
 
+# Don't require quoting hash characters in commands.
+unsetopt EXTENDED_GLOB
+
 #
 # zsh-history-substring-search
 #
@@ -122,5 +124,13 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
-# Don't require quoting hash characters in commands.
-unsetopt EXTENDED_GLOB
+# shfmt mangles dashes in key names.
+fzf_command="fzf-share"
+if [ -n "${commands[${fzf_command}]}" ]; then
+	source "$(fzf-share)/key-bindings.zsh"
+	source "$(fzf-share)/completion.zsh"
+fi
+
+if [ -n "${commands[direnv]}" ]; then
+	eval "$(direnv hook zsh)"
+fi
