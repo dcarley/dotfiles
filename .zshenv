@@ -7,7 +7,7 @@
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 # }}} End configuration added by Zim install
 
-export VISUAL="flox activate -r dcarley/emacs -- emacsclient"
+export VISUAL="flox activate -m run -d ~/dotfiles/flox/emacs -- emacsclient"
 export EDITOR="$VISUAL"
 
 # Don't muddy stats with Flox employees.

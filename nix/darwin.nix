@@ -1,8 +1,9 @@
 { pkgs, inputs, ... }:
 let
+  floxBin = "${inputs.flox.packages.${pkgs.system}.default}/bin/flox";
   floxApps = [
-    { name = "flox-kitty"; command = "flox activate -r dcarley/shell -- kitty"; }
-    { name = "flox-emacs"; command = "flox activate -r dcarley/emacs -- emacs"; }
+    { name = "Emacs"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/emacs -- emacs"; }
+    { name = "Kitty"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/term -- kitty"; }
   ];
 in
 {
@@ -20,7 +21,10 @@ in
 
   system.activationScripts.postActivation = {
     text = builtins.concatStringsSep "\n" (map (app: ''
-      osacompile -o /Applications/${app.name}.app -e 'do shell script "zsh -l -c \"${app.command}\""'
+      mkdir -p "/Applications/Flox Trampolines"
+      osacompile \
+        -o "/Applications/Flox Trampolines/${app.name}.app" \
+        -e 'do shell script "zsh -l -c \"${app.command}\""'
     '') floxApps);
   };
 

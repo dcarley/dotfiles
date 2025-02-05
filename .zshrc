@@ -124,6 +124,9 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 # }}} End configuration added by Zim install
 
+# Activate Flox before using any packages that come from it.
+eval "$(flox activate -m run -d ~/dotfiles/flox/default)"
+
 # shfmt mangles dashes in key names.
 fzf_command="fzf-share"
 if [ -n "${commands[${fzf_command}]}" ]; then
