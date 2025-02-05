@@ -2,14 +2,10 @@
   description = "dcarley system flake";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-23.11-darwin";
-    nix-darwin = {
-      url = "github:LnL7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    flox = {
-      url = "github:flox/flox";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
+    nix-darwin.url = "github:LnL7/nix-darwin/nix-darwin-24.11";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    flox.url = "github:flox/flox/v1.3.12";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, flox }: {
