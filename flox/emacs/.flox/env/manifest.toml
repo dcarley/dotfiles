@@ -1,0 +1,45 @@
+version = 1
+
+[install]
+# https://github.com/doomemacs/doomemacs?tab=readme-ov-file#prerequisites
+emacs.pkg-path = "emacs"
+emacs.version = ">=29.4"
+
+fd.pkg-path = "fd"
+fd.version = ">=7.3"
+
+git.pkg-path = "git"
+git.version = ">=2.23"
+
+ripgrep.pkg-path = "ripgrep"
+ripgrep.version = ">=11.0"
+
+# https://docs.doomemacs.org/v21.12/modules/emacs/undo/
+zstd.pkg-path = "zstd"
+
+# https://docs.doomemacs.org/v21.12/modules/checkers/spell/
+aspell.pkg-path = "aspell"
+
+# https://docs.doomemacs.org/v21.12/modules/tools/direnv/
+direnv.pkg-path = "direnv"
+
+# https://docs.doomemacs.org/v21.12/#/modules/editor/format
+shfmt.pkg-path = "shfmt"
+
+# https://docs.doomemacs.org/latest/?#/modules/lang/sh
+shellcheck.pkg-path = "shellcheck"
+bash-language-server.pkg-path = "bash-language-server"
+
+# https://github.com/copilot-emacs/copilot.el?tab=readme-ov-file#installation
+nodejs_22.pkg-path = "nodejs_22"
+
+# https://docs.doomemacs.org/v21.12/modules/lang/nix/
+nil.pkg-path = "nil"
+
+[options]
+systems = [
+  "aarch64-darwin",
+  "aarch64-linux",
+  "x86_64-darwin",
+  "x86_64-linux",
+]

@@ -1,0 +1,27 @@
+version = 1
+
+[install]
+fzf.pkg-path = "fzf"
+direnv.pkg-path = "direnv"
+git.pkg-path = "git"
+
+coreutils.pkg-path = "coreutils"
+vim.pkg-path = "vim"
+
+pstree.pkg-path = "pstree"
+watchexec.pkg-path = "watchexec"
+ripgrep.pkg-path = "ripgrep"
+
+jq.pkg-path = "jq"
+yq-go.pkg-path = "yq-go"
+httpie.pkg-path = "httpie"
+
+1password.pkg-path = "_1password-cli"
+
+[options]
+systems = [
+  "aarch64-darwin",
+  "aarch64-linux",
+  "x86_64-darwin",
+  "x86_64-linux",
+]

@@ -1,0 +1,290 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "version": 1,
+    "install": {
+      "kitty": {
+        "pkg-path": "kitty"
+      },
+      "zsh": {
+        "pkg-path": "zsh"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {
+      "systems": [
+        "aarch64-darwin",
+        "aarch64-linux",
+        "x86_64-darwin",
+        "x86_64-linux"
+      ],
+      "allow": {
+        "licenses": []
+      },
+      "semver": {}
+    }
+  },
+  "packages": [
+    {
+      "attr_path": "kitty",
+      "broken": false,
+      "derivation": "/nix/store/jvyx6mnqgl80wfbmmbs2zrnanapz25fp-kitty-0.39.0.drv",
+      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "install_id": "kitty",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "kitty-0.39.0",
+      "pname": "kitty",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.39.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "kitten": "/nix/store/wz8y3c07qvhk4vckw9l23z4zhyqnc9y7-kitty-0.39.0-kitten",
+        "out": "/nix/store/awqnvyla71z8vkdbc1qrlba6m2mn10ax-kitty-0.39.0",
+        "shell_integration": "/nix/store/3sh4sz0x1966pm659g05x3mkiccc0xk6-kitty-0.39.0-shell_integration",
+        "terminfo": "/nix/store/0y5d8kykiad310sfa6xsl4lvw7qyldn1-kitty-0.39.0-terminfo"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kitty",
+      "broken": false,
+      "derivation": "/nix/store/0sfsqxmyvjzbr6yjgfi51jbr5h6w358g-kitty-0.39.0.drv",
+      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "install_id": "kitty",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "kitty-0.39.0",
+      "pname": "kitty",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.39.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "kitten": "/nix/store/r19b2fd3rj2vw8b8hdwdm8h42gxbafy0-kitty-0.39.0-kitten",
+        "out": "/nix/store/mxch2ikaky31bfiasa1q49fl8d2hlrpp-kitty-0.39.0",
+        "shell_integration": "/nix/store/z51jy887mdcdhp1p5h4xnrc427fy9jn0-kitty-0.39.0-shell_integration",
+        "terminfo": "/nix/store/0q8ahg8brm68549j83hwgwgsf6wcsn4s-kitty-0.39.0-terminfo"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kitty",
+      "broken": false,
+      "derivation": "/nix/store/915q2yp4306ywhf9qljvabrr9r36z485-kitty-0.39.0.drv",
+      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "install_id": "kitty",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "kitty-0.39.0",
+      "pname": "kitty",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.39.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "kitten": "/nix/store/c04s333rmc5fbdb76ndxjmvws9dgagn8-kitty-0.39.0-kitten",
+        "out": "/nix/store/pbfc3jimr106zazn2vv8cvikrzmagqjf-kitty-0.39.0",
+        "shell_integration": "/nix/store/c96grynwaqrw242l7g0waq56a3bnxxrd-kitty-0.39.0-shell_integration",
+        "terminfo": "/nix/store/ly0rwz299ffcqp5hybj0hc9r7bzc0w3q-kitty-0.39.0-terminfo"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "kitty",
+      "broken": false,
+      "derivation": "/nix/store/ar6xxr2nb9pjlw4qlaznydqdjrvkqma7-kitty-0.39.0.drv",
+      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "install_id": "kitty",
+      "license": "GPL-3.0-only",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "kitty-0.39.0",
+      "pname": "kitty",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.39.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "kitten": "/nix/store/iacklpr6fkwx2idi6dvq404ygylvlkq3-kitty-0.39.0-kitten",
+        "out": "/nix/store/aisrlca8g6b8wpxf2z1210b5rkdr1nwg-kitty-0.39.0",
+        "shell_integration": "/nix/store/ncprkcrvra7mfrfbsc8dnxkywmbhn904-kitty-0.39.0-shell_integration",
+        "terminfo": "/nix/store/bmrwihdz65jdcwz06imdak75sg2z8908-kitty-0.39.0-terminfo"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zsh",
+      "broken": false,
+      "derivation": "/nix/store/yh12ypaw8kbc474njbc31mpx1wj8x81z-zsh-5.9.drv",
+      "description": "Z shell",
+      "install_id": "zsh",
+      "license": "MIT-like",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "zsh-5.9",
+      "pname": "zsh",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.9",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/ig2ig2dq4bw0cmhx4sxxyqmg7dc0cz2m-zsh-5.9-doc",
+        "info": "/nix/store/b14rfm5s48iy6v3mfxcvmy3n3568vaid-zsh-5.9-info",
+        "man": "/nix/store/wpc7d521hi2msmlicrp0j3zsraglb2w4-zsh-5.9-man",
+        "out": "/nix/store/l9jyhclsyss3fj81a83p86ccqm416dms-zsh-5.9"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zsh",
+      "broken": false,
+      "derivation": "/nix/store/bz13s84na7fhnpx0xidd67rd05a7dbgz-zsh-5.9.drv",
+      "description": "Z shell",
+      "install_id": "zsh",
+      "license": "MIT-like",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "zsh-5.9",
+      "pname": "zsh",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.9",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/brzk6mb0hryg3729xlbp46h8chvn6nph-zsh-5.9-doc",
+        "info": "/nix/store/086rfl6qw2sx17g599crm03zgkb2kfvc-zsh-5.9-info",
+        "man": "/nix/store/n2l98v1ax9mm5pscjsgp8szyv28yxcsm-zsh-5.9-man",
+        "out": "/nix/store/js263as21llxi7hh4g9j2n4bxwi06njr-zsh-5.9"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zsh",
+      "broken": false,
+      "derivation": "/nix/store/i5ccznmvk8c9949zgmxdkrw92x2asvxb-zsh-5.9.drv",
+      "description": "Z shell",
+      "install_id": "zsh",
+      "license": "MIT-like",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "zsh-5.9",
+      "pname": "zsh",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.9",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/1b7mg498ayhi41wmqmd49p48f4gh4cdk-zsh-5.9-doc",
+        "info": "/nix/store/qikyivdcjyirgc2q96vxarwv7j5561c8-zsh-5.9-info",
+        "man": "/nix/store/hcmrvacsrfm1ky1zybdgi8nbcdhi6rhz-zsh-5.9-man",
+        "out": "/nix/store/rws642m1fyh2c6i065y944lx5zb6v1j2-zsh-5.9"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "zsh",
+      "broken": false,
+      "derivation": "/nix/store/93354n3vninkzqkdrd8f0ixv30cd8hz7-zsh-5.9.drv",
+      "description": "Z shell",
+      "install_id": "zsh",
+      "license": "MIT-like",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "name": "zsh-5.9",
+      "pname": "zsh",
+      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
+      "rev_count": 747653,
+      "rev_date": "2025-02-04T14:46:40Z",
+      "scrape_date": "2025-02-05T00:30:07Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "5.9",
+      "outputs_to_install": [
+        "man",
+        "out"
+      ],
+      "outputs": {
+        "doc": "/nix/store/lmxrr2vcwg21sbslmv9jdkhy9gjc7vzd-zsh-5.9-doc",
+        "info": "/nix/store/4nf63qxcyk4kbliicvlqj87fiqsv2mwm-zsh-5.9-info",
+        "man": "/nix/store/v239qg1mf71zwsp9d1g89a9r199ya7jq-zsh-5.9-man",
+        "out": "/nix/store/i6marj58n6s0mbchcvgljqqwqgq4k03k-zsh-5.9"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
