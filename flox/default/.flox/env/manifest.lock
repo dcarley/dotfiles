@@ -40,8 +40,6 @@
         "pkg-path": "yq-go"
       }
     },
-    "hook": {},
-    "profile": {},
     "options": {
       "systems": [
         "aarch64-darwin",

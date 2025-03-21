@@ -10,8 +10,6 @@
         "pkg-path": "zsh"
       }
     },
-    "hook": {},
-    "profile": {},
     "options": {
       "systems": [
         "aarch64-darwin",
