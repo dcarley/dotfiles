@@ -2,6 +2,9 @@
     name = Dan Carley
     email = dan.carley@gmail.com
 
+[includeIf "gitdir:~/projects/flox/"]
+    path = .gitconfig.flox
+
 [core]
     excludesfile = ~/.gitignore
 
