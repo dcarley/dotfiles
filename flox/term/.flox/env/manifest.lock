@@ -23,30 +23,30 @@
     {
       "attr_path": "kitty",
       "broken": false,
-      "derivation": "/nix/store/jvyx6mnqgl80wfbmmbs2zrnanapz25fp-kitty-0.39.0.drv",
-      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "derivation": "/nix/store/yxv32cpxcsmnq8km3m1kpc4ca1q3rbb1-kitty-0.43.1.drv",
+      "description": "Fast, feature-rich, GPU based terminal emulator",
       "install_id": "kitty",
       "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
-      "name": "kitty-0.39.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "kitty-0.43.1",
       "pname": "kitty",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:33.650661Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.39.0",
+      "version": "0.43.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "kitten": "/nix/store/wz8y3c07qvhk4vckw9l23z4zhyqnc9y7-kitty-0.39.0-kitten",
-        "out": "/nix/store/awqnvyla71z8vkdbc1qrlba6m2mn10ax-kitty-0.39.0",
-        "shell_integration": "/nix/store/3sh4sz0x1966pm659g05x3mkiccc0xk6-kitty-0.39.0-shell_integration",
-        "terminfo": "/nix/store/0y5d8kykiad310sfa6xsl4lvw7qyldn1-kitty-0.39.0-terminfo"
+        "kitten": "/nix/store/f1nn6jm9q5c9cd0wzzr38ngkpgfdjs4w-kitty-0.43.1-kitten",
+        "out": "/nix/store/chlfgifx4s1azjzvsf6msj2z2pqacyg5-kitty-0.43.1",
+        "shell_integration": "/nix/store/zlhmy2mpy7n5bx17wg0bqjdgzg7x20x2-kitty-0.43.1-shell_integration",
+        "terminfo": "/nix/store/cfzc3pcarm63f7nmfmxavrf5crp2p8w4-kitty-0.43.1-terminfo"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -55,30 +55,30 @@
     {
       "attr_path": "kitty",
       "broken": false,
-      "derivation": "/nix/store/0sfsqxmyvjzbr6yjgfi51jbr5h6w358g-kitty-0.39.0.drv",
-      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "derivation": "/nix/store/2kiwknmvrzz3lj86a6lwlr7n34m4vvcz-kitty-0.43.1.drv",
+      "description": "Fast, feature-rich, GPU based terminal emulator",
       "install_id": "kitty",
       "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
-      "name": "kitty-0.39.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "kitty-0.43.1",
       "pname": "kitty",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:29:20.011863Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.39.0",
+      "version": "0.43.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "kitten": "/nix/store/r19b2fd3rj2vw8b8hdwdm8h42gxbafy0-kitty-0.39.0-kitten",
-        "out": "/nix/store/mxch2ikaky31bfiasa1q49fl8d2hlrpp-kitty-0.39.0",
-        "shell_integration": "/nix/store/z51jy887mdcdhp1p5h4xnrc427fy9jn0-kitty-0.39.0-shell_integration",
-        "terminfo": "/nix/store/0q8ahg8brm68549j83hwgwgsf6wcsn4s-kitty-0.39.0-terminfo"
+        "kitten": "/nix/store/a147qcykqgcpdk6w48fag11jk0r3lmzk-kitty-0.43.1-kitten",
+        "out": "/nix/store/szvj83vcgjq1aq142vxn8v0frqxs54x5-kitty-0.43.1",
+        "shell_integration": "/nix/store/v6xyav8fzb9y5vh385cq7abna70hj5rv-kitty-0.43.1-shell_integration",
+        "terminfo": "/nix/store/rs12lc8wnixhzchaspifl1km5bvcl7k8-kitty-0.43.1-terminfo"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -87,30 +87,30 @@
     {
       "attr_path": "kitty",
       "broken": false,
-      "derivation": "/nix/store/915q2yp4306ywhf9qljvabrr9r36z485-kitty-0.39.0.drv",
-      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "derivation": "/nix/store/4kcppf59y348b8j0nilj3nrx2k6s5fqp-kitty-0.43.1.drv",
+      "description": "Fast, feature-rich, GPU based terminal emulator",
       "install_id": "kitty",
       "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
-      "name": "kitty-0.39.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "kitty-0.43.1",
       "pname": "kitty",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:55:13.514404Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.39.0",
+      "version": "0.43.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "kitten": "/nix/store/c04s333rmc5fbdb76ndxjmvws9dgagn8-kitty-0.39.0-kitten",
-        "out": "/nix/store/pbfc3jimr106zazn2vv8cvikrzmagqjf-kitty-0.39.0",
-        "shell_integration": "/nix/store/c96grynwaqrw242l7g0waq56a3bnxxrd-kitty-0.39.0-shell_integration",
-        "terminfo": "/nix/store/ly0rwz299ffcqp5hybj0hc9r7bzc0w3q-kitty-0.39.0-terminfo"
+        "kitten": "/nix/store/wd0q0phzzck59fq65l3l9hd0jhbn4icq-kitty-0.43.1-kitten",
+        "out": "/nix/store/ii294103cfn3zqyabyazrs4cb8421n4a-kitty-0.43.1",
+        "shell_integration": "/nix/store/hvbkwksj86frnridrvcy28v6swynw8mc-kitty-0.43.1-shell_integration",
+        "terminfo": "/nix/store/ykk5mms0jj5jp4s3k9vh3x312dn1zf1i-kitty-0.43.1-terminfo"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -119,30 +119,30 @@
     {
       "attr_path": "kitty",
       "broken": false,
-      "derivation": "/nix/store/ar6xxr2nb9pjlw4qlaznydqdjrvkqma7-kitty-0.39.0.drv",
-      "description": "The fast, feature-rich, GPU based terminal emulator",
+      "derivation": "/nix/store/izlc1x52h9ypn9kjmb4v4a9iavi26vgh-kitty-0.43.1.drv",
+      "description": "Fast, feature-rich, GPU based terminal emulator",
       "install_id": "kitty",
       "license": "GPL-3.0-only",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
-      "name": "kitty-0.39.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "kitty-0.43.1",
       "pname": "kitty",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:21:10.670455Z",
       "stabilities": [
         "unstable"
       ],
       "unfree": false,
-      "version": "0.39.0",
+      "version": "0.43.1",
       "outputs_to_install": [
         "out"
       ],
       "outputs": {
-        "kitten": "/nix/store/iacklpr6fkwx2idi6dvq404ygylvlkq3-kitty-0.39.0-kitten",
-        "out": "/nix/store/aisrlca8g6b8wpxf2z1210b5rkdr1nwg-kitty-0.39.0",
-        "shell_integration": "/nix/store/ncprkcrvra7mfrfbsc8dnxkywmbhn904-kitty-0.39.0-shell_integration",
-        "terminfo": "/nix/store/bmrwihdz65jdcwz06imdak75sg2z8908-kitty-0.39.0-terminfo"
+        "kitten": "/nix/store/dad7ns7r0zg9hhd6g7jma9iswzr3x798-kitty-0.43.1-kitten",
+        "out": "/nix/store/njdi38l7442vdzrdjvjn4p6z9053w8yb-kitty-0.43.1",
+        "shell_integration": "/nix/store/lr0pjy11sxw7d585iflyy89xbipii1l1-kitty-0.43.1-shell_integration",
+        "terminfo": "/nix/store/4ifiq7hiy2ckc29k89bmxdp1xw4gpns0-kitty-0.43.1-terminfo"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
@@ -151,17 +151,17 @@
     {
       "attr_path": "zsh",
       "broken": false,
-      "derivation": "/nix/store/yh12ypaw8kbc474njbc31mpx1wj8x81z-zsh-5.9.drv",
+      "derivation": "/nix/store/jdhbkmii8cg9abc2zw1c8nzv5hxlp671-zsh-5.9.drv",
       "description": "Z shell",
       "install_id": "zsh",
-      "license": "MIT-like",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "license": "MIT-Modern-Variant",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "zsh-5.9",
       "pname": "zsh",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:37:54.619772Z",
       "stabilities": [
         "unstable"
       ],
@@ -172,10 +172,10 @@
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/ig2ig2dq4bw0cmhx4sxxyqmg7dc0cz2m-zsh-5.9-doc",
-        "info": "/nix/store/b14rfm5s48iy6v3mfxcvmy3n3568vaid-zsh-5.9-info",
-        "man": "/nix/store/wpc7d521hi2msmlicrp0j3zsraglb2w4-zsh-5.9-man",
-        "out": "/nix/store/l9jyhclsyss3fj81a83p86ccqm416dms-zsh-5.9"
+        "doc": "/nix/store/0997h7jaf91qhc9m51gl0ayshklz35yc-zsh-5.9-doc",
+        "info": "/nix/store/mm4nc0jnh5yyzzh9p1qvx3aa6yidmvpj-zsh-5.9-info",
+        "man": "/nix/store/r7zmj5v0vf9bd0n7id7fy1738q51mvip-zsh-5.9-man",
+        "out": "/nix/store/2g3h900iy7ri455lyjycpmjx6fw8pgi4-zsh-5.9"
       },
       "system": "aarch64-darwin",
       "group": "toplevel",
@@ -184,17 +184,17 @@
     {
       "attr_path": "zsh",
       "broken": false,
-      "derivation": "/nix/store/bz13s84na7fhnpx0xidd67rd05a7dbgz-zsh-5.9.drv",
+      "derivation": "/nix/store/4hbnsyjfgvrdy8kgyqhrfbpaqnjm5nj2-zsh-5.9.drv",
       "description": "Z shell",
       "install_id": "zsh",
-      "license": "MIT-like",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "license": "MIT-Modern-Variant",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "zsh-5.9",
       "pname": "zsh",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:32:26.885812Z",
       "stabilities": [
         "unstable"
       ],
@@ -205,10 +205,10 @@
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/brzk6mb0hryg3729xlbp46h8chvn6nph-zsh-5.9-doc",
-        "info": "/nix/store/086rfl6qw2sx17g599crm03zgkb2kfvc-zsh-5.9-info",
-        "man": "/nix/store/n2l98v1ax9mm5pscjsgp8szyv28yxcsm-zsh-5.9-man",
-        "out": "/nix/store/js263as21llxi7hh4g9j2n4bxwi06njr-zsh-5.9"
+        "doc": "/nix/store/2r35a6rarbsnchpji0c1bfbl2g18mqgy-zsh-5.9-doc",
+        "info": "/nix/store/badsgvibykddk3gpmd7dazh7x3hsmj33-zsh-5.9-info",
+        "man": "/nix/store/q87xzj302agngyhw2jklm44ax5bvij4p-zsh-5.9-man",
+        "out": "/nix/store/9sfpw0xmz01lbn1r051bc3f2ax8ryq4z-zsh-5.9"
       },
       "system": "aarch64-linux",
       "group": "toplevel",
@@ -217,17 +217,17 @@
     {
       "attr_path": "zsh",
       "broken": false,
-      "derivation": "/nix/store/i5ccznmvk8c9949zgmxdkrw92x2asvxb-zsh-5.9.drv",
+      "derivation": "/nix/store/8m7m32p05bz9n4xl555n3bjjadscayl4-zsh-5.9.drv",
       "description": "Z shell",
       "install_id": "zsh",
-      "license": "MIT-like",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "license": "MIT-Modern-Variant",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "zsh-5.9",
       "pname": "zsh",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:57:26.204684Z",
       "stabilities": [
         "unstable"
       ],
@@ -238,10 +238,10 @@
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/1b7mg498ayhi41wmqmd49p48f4gh4cdk-zsh-5.9-doc",
-        "info": "/nix/store/qikyivdcjyirgc2q96vxarwv7j5561c8-zsh-5.9-info",
-        "man": "/nix/store/hcmrvacsrfm1ky1zybdgi8nbcdhi6rhz-zsh-5.9-man",
-        "out": "/nix/store/rws642m1fyh2c6i065y944lx5zb6v1j2-zsh-5.9"
+        "doc": "/nix/store/5y2hq07csyr1rpifm6lgwamazyf2xslc-zsh-5.9-doc",
+        "info": "/nix/store/5dydl688ng3n3hglkn8g2ly96pc8gd22-zsh-5.9-info",
+        "man": "/nix/store/4gvi7m6hakp8p9ybnq0pw8y86p8i4bzk-zsh-5.9-man",
+        "out": "/nix/store/s1rxq14czw8b2wjq4jkz2qkyxdkfi87n-zsh-5.9"
       },
       "system": "x86_64-darwin",
       "group": "toplevel",
@@ -250,17 +250,17 @@
     {
       "attr_path": "zsh",
       "broken": false,
-      "derivation": "/nix/store/93354n3vninkzqkdrd8f0ixv30cd8hz7-zsh-5.9.drv",
+      "derivation": "/nix/store/rn6fk6vyc8sxay5ng053fcmgm2azjf6a-zsh-5.9.drv",
       "description": "Z shell",
       "install_id": "zsh",
-      "license": "MIT-like",
-      "locked_url": "https://github.com/flox/nixpkgs?rev=799ba5bffed04ced7067a91798353d360788b30d",
+      "license": "MIT-Modern-Variant",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
       "name": "zsh-5.9",
       "pname": "zsh",
-      "rev": "799ba5bffed04ced7067a91798353d360788b30d",
-      "rev_count": 747653,
-      "rev_date": "2025-02-04T14:46:40Z",
-      "scrape_date": "2025-02-05T00:30:07Z",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:24:38.245431Z",
       "stabilities": [
         "unstable"
       ],
@@ -271,10 +271,10 @@
         "out"
       ],
       "outputs": {
-        "doc": "/nix/store/lmxrr2vcwg21sbslmv9jdkhy9gjc7vzd-zsh-5.9-doc",
-        "info": "/nix/store/4nf63qxcyk4kbliicvlqj87fiqsv2mwm-zsh-5.9-info",
-        "man": "/nix/store/v239qg1mf71zwsp9d1g89a9r199ya7jq-zsh-5.9-man",
-        "out": "/nix/store/i6marj58n6s0mbchcvgljqqwqgq4k03k-zsh-5.9"
+        "doc": "/nix/store/9cm54i93a916sjp4dcgsmiiichrh9p9k-zsh-5.9-doc",
+        "info": "/nix/store/xf7rkd86f05y6swg1w419vrrzqznak5l-zsh-5.9-info",
+        "man": "/nix/store/6a6d6p7jfjhh66idznqny6gwhzi3zns5-zsh-5.9-man",
+        "out": "/nix/store/j424hy1p76sqywcg0vcqbaqp560hw0c5-zsh-5.9"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
