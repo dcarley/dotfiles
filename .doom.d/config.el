@@ -28,7 +28,9 @@
   :config (when (file-exists-p copilot-install-dir)
             (copilot-uninstall-server)))
 
-;; (use-package! copilot-chat)
+(after! gptel
+  (setq gptel-backend (gptel-make-gh-copilot "Copilot")
+        gptel-model 'claude-sonnet-4.5))
 
 (after! apheleia
   ;; https://github.com/radian-software/apheleia/issues/278
