@@ -24,7 +24,9 @@
               ("C-<tab>" . 'copilot-accept-completion-by-word)
               ("C-n" . 'copilot-next-completion)
               ("C-p" . 'copilot-previous-completion))
-  :init (setq copilot-indent-offset-warning-disable t))
+  :init (setq copilot-disable-prompt-on-indent-offset-warning t)
+  :config (when (file-exists-p copilot-install-dir)
+            (copilot-uninstall-server)))
 
 ;; (use-package! copilot-chat)
 

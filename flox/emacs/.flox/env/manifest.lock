@@ -9,6 +9,9 @@
       "bash-language-server": {
         "pkg-path": "bash-language-server"
       },
+      "copilot-language-server": {
+        "pkg-path": "copilot-language-server"
+      },
       "direnv": {
         "pkg-path": "direnv"
       },
@@ -281,6 +284,122 @@
       ],
       "outputs": {
         "out": "/nix/store/k23hlbjds3c3fr1dpqqhfdsx7j64xj21-bash-language-server-5.6.0"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "copilot-language-server",
+      "broken": false,
+      "derivation": "/nix/store/96flfl4q3z7r1kyyglx84494mq0wghjr-copilot-language-server-1.389.0.drv",
+      "description": "Use GitHub Copilot with any editor or IDE via the Language Server Protocol",
+      "install_id": "copilot-language-server",
+      "license": "GitHub Copilot Product Specific Terms",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "copilot-language-server-1.389.0",
+      "pname": "copilot-language-server",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:18.427092Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.389.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/mi6h41wzmqcy1dkrb86cbpi54rzc4mvk-copilot-language-server-1.389.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "copilot-language-server",
+      "broken": false,
+      "derivation": "/nix/store/d4n6afysl4gr8dq4ihn98hq22rn16q9m-copilot-language-server-1.389.0.drv",
+      "description": "Use GitHub Copilot with any editor or IDE via the Language Server Protocol",
+      "install_id": "copilot-language-server",
+      "license": "GitHub Copilot Product Specific Terms",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "copilot-language-server-1.389.0",
+      "pname": "copilot-language-server",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:28:57.753576Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.389.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/jna5a0m6f3bspvig04p7472xk39dkgzq-copilot-language-server-1.389.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "copilot-language-server",
+      "broken": false,
+      "derivation": "/nix/store/340gq2ph0nlgbcjckzq9hqpx3an0siyh-copilot-language-server-1.389.0.drv",
+      "description": "Use GitHub Copilot with any editor or IDE via the Language Server Protocol",
+      "install_id": "copilot-language-server",
+      "license": "GitHub Copilot Product Specific Terms",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "copilot-language-server-1.389.0",
+      "pname": "copilot-language-server",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:54:57.474161Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.389.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/15qdcbrk68l0j2wa591g0bc6b5dpmqkm-copilot-language-server-1.389.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "copilot-language-server",
+      "broken": false,
+      "derivation": "/nix/store/rxy7y4qm6rnwifiywb97wmzc6rgvl27q-copilot-language-server-1.389.0.drv",
+      "description": "Use GitHub Copilot with any editor or IDE via the Language Server Protocol",
+      "install_id": "copilot-language-server",
+      "license": "GitHub Copilot Product Specific Terms",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "copilot-language-server-1.389.0",
+      "pname": "copilot-language-server",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:20:47.068496Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": true,
+      "version": "1.389.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/x5a4h5ynzxksrd8napic1b6sgskk43qj-copilot-language-server-1.389.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

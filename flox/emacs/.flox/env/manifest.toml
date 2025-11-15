@@ -35,6 +35,7 @@ nodejs_22.pkg-path = "nodejs_22"
 
 # https://docs.doomemacs.org/v21.12/modules/lang/nix/
 nil.pkg-path = "nil"
+copilot-language-server.pkg-path = "copilot-language-server"
 
 [options]
 systems = [
