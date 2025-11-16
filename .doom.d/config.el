@@ -35,7 +35,7 @@
 (after! apheleia
   ;; https://github.com/radian-software/apheleia/issues/278
   (setf (alist-get 'rustfmt  apheleia-formatters)
-        '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2021")))
+        '("rustfmt" "--quiet" "--emit" "stdout" "--edition" "2024")))
 
 (after! rustic
   (setq rustic-compile-backtrace "1"))
