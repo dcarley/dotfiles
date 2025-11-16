@@ -103,6 +103,9 @@ source ${ZIM_HOME}/init.zsh
 # Don't require quoting hash characters in commands.
 unsetopt EXTENDED_GLOB
 
+# Glob hidden files.
+setopt GLOB_DOTS
+
 #
 # zsh-history-substring-search
 #
