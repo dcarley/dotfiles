@@ -8,7 +8,7 @@ let
 in
 {
   environment.systemPackages =
-    (with pkgs; [
+    [
       # Installed manually:
       # Chrome
       # 1password
@@ -17,7 +17,7 @@ in
       # Spotify
 
       inputs.flox.packages.${pkgs.system}.default
-    ]);
+    ];
 
   system.activationScripts.postActivation = {
     text = builtins.concatStringsSep "\n" (map (app: ''
