@@ -12,6 +12,7 @@ pstree.pkg-path = "pstree"
 watchexec.pkg-path = "watchexec"
 ripgrep.pkg-path = "ripgrep"
 
+jless.pkg-path = "jless"
 jq.pkg-path = "jq"
 yq-go.pkg-path = "yq-go"
 httpie.pkg-path = "httpie"

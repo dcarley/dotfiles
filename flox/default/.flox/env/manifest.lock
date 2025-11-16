@@ -21,6 +21,9 @@
       "httpie": {
         "pkg-path": "httpie"
       },
+      "jless": {
+        "pkg-path": "jless"
+      },
       "jq": {
         "pkg-path": "jq"
       },
@@ -758,6 +761,122 @@
       "outputs": {
         "dist": "/nix/store/abnxc9fdamdmhc9v6w16p6gnvxdr3868-python3.13-httpie-3.2.4-dist",
         "out": "/nix/store/z9rx3i7w1fwa0sh6x69yckkka21qnmg4-python3.13-httpie-3.2.4"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jless",
+      "broken": false,
+      "derivation": "/nix/store/mjrlrs8r3lp4z91y4m7ixapf7f8qra0b-jless-0.9.0.drv",
+      "description": "Command-line pager for JSON data",
+      "install_id": "jless",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "jless-0.9.0",
+      "pname": "jless",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-04T00:35:33.147251Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/d5x0hwhf8h33vzq34h7dhnx10jg4jzzp-jless-0.9.0"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jless",
+      "broken": false,
+      "derivation": "/nix/store/3n1h5c3kckr7rjfr3l282vmv3x7fnh8i-jless-0.9.0.drv",
+      "description": "Command-line pager for JSON data",
+      "install_id": "jless",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "jless-0.9.0",
+      "pname": "jless",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:29:18.553829Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/pgx457ybq5lw8pkgdn2fihi0qk6ybf33-jless-0.9.0"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jless",
+      "broken": false,
+      "derivation": "/nix/store/dziwl8f3a17d89bfn5crc5rzi84hxd66-jless-0.9.0.drv",
+      "description": "Command-line pager for JSON data",
+      "install_id": "jless",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "jless-0.9.0",
+      "pname": "jless",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T16:55:13.005168Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/1ky1bs4wqg2k8lwkpyk7f2vjmc1z86ly-jless-0.9.0"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "jless",
+      "broken": false,
+      "derivation": "/nix/store/95b441sy95jwkkxj3cn0i176z3v1ywl9-jless-0.9.0.drv",
+      "description": "Command-line pager for JSON data",
+      "install_id": "jless",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "name": "jless-0.9.0",
+      "pname": "jless",
+      "rev": "b3d51a0365f6695e7dd5cdf3e180604530ed33b4",
+      "rev_count": 888552,
+      "rev_date": "2025-11-02T19:18:41Z",
+      "scrape_date": "2025-11-05T17:21:09.131551Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/a364j7qrw57ph510n2bdpyv8rpkzb460-jless-0.9.0"
       },
       "system": "x86_64-linux",
       "group": "toplevel",
