@@ -5,6 +5,16 @@ let
     { name = "Emacs"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/emacs -- emacs"; }
     { name = "Kitty"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/term -- kitty"; }
   ];
+
+  # Generates a script to create a .app for a flox package
+  mkFloxAppScript = app: ''
+    mkdir -p "/Applications/Flox Trampolines"
+    osacompile \
+      -o "/Applications/Flox Trampolines/${app.name}.app" \
+      -e 'do shell script "zsh -l -c \"${app.command}\""'
+  '';
+
+  postActivationScript = pkgs.lib.concatStringsSep "\n" (map mkFloxAppScript floxApps);
 in
 {
   environment.systemPackages =
@@ -19,14 +29,7 @@ in
       inputs.flox.packages.${pkgs.system}.default
     ];
 
-  system.activationScripts.postActivation = {
-    text = builtins.concatStringsSep "\n" (map (app: ''
-      mkdir -p "/Applications/Flox Trampolines"
-      osacompile \
-        -o "/Applications/Flox Trampolines/${app.name}.app" \
-        -e 'do shell script "zsh -l -c \"${app.command}\""'
-    '') floxApps);
-  };
+  system.activationScripts.postActivation.text = postActivationScript;
 
   environment.variables = {
     ASPELL_CONF = "dict-dir ${pkgs.aspellDicts.en}/lib/aspell";
