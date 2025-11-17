@@ -8,33 +8,22 @@
     flox.url = "github:flox/flox/latest";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, flox }: {
-    darwinConfigurations.mbp13 = nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./nix/darwin.nix
-        {
-          nixpkgs.hostPlatform = "x86_64-darwin";
-        }
-      ];
+  outputs = inputs@{ self, nix-darwin, nixpkgs, flox }:
+    let
+      makeSystem = platform: nix-darwin.lib.darwinSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./nix/darwin.nix
+          { nixpkgs.hostPlatform = platform; }
+        ];
+      };
+      systems = {
+        mbp13 = "x86_64-darwin";
+        mbp16 = "aarch64-darwin";
+        mba15 = "aarch64-darwin";
+      };
+    in
+    {
+      darwinConfigurations = nixpkgs.lib.mapAttrs (hostname: platform: makeSystem platform) systems;
     };
-    darwinConfigurations.mbp16 = nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./nix/darwin.nix
-        {
-          nixpkgs.hostPlatform = "aarch64-darwin";
-        }
-      ];
-    };
-    darwinConfigurations.mba15 = nix-darwin.lib.darwinSystem {
-      specialArgs = { inherit inputs; };
-      modules = [
-        ./nix/darwin.nix
-        {
-          nixpkgs.hostPlatform = "aarch64-darwin";
-        }
-      ];
-    };
-  };
 }
