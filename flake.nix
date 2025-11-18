@@ -13,7 +13,7 @@
       makeSystem = platform: nix-darwin.lib.darwinSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          ./nix/darwin.nix
+          ./darwin.nix
           { nixpkgs.hostPlatform = platform; }
         ];
       };
