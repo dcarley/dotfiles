@@ -47,7 +47,11 @@
         "pkg-path": "zstd"
       }
     },
-    "options": {}
+    "options": {
+      "activate": {
+        "mode": "run"
+      }
+    }
   },
   "packages": [
     {

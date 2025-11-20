@@ -10,7 +10,11 @@
         "pkg-path": "zsh"
       }
     },
-    "options": {}
+    "options": {
+      "activate": {
+        "mode": "run"
+      }
+    }
   },
   "packages": [
     {

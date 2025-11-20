@@ -43,7 +43,11 @@
         "pkg-path": "yq-go"
       }
     },
-    "options": {}
+    "options": {
+      "activate": {
+        "mode": "run"
+      }
+    }
   },
   "packages": [
     {

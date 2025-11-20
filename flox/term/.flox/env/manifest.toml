@@ -4,3 +4,5 @@ version = 1
 kitty.pkg-path = "kitty"
 zsh.pkg-path = "zsh"
 
+[options]
+activate.mode = "run"

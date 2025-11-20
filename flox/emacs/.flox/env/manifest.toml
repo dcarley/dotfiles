@@ -37,3 +37,5 @@ nodejs_22.pkg-path = "nodejs_22"
 nil.pkg-path = "nil"
 copilot-language-server.pkg-path = "copilot-language-server"
 
+[options]
+activate.mode = "run"
