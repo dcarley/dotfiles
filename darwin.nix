@@ -35,17 +35,16 @@ in
     ASPELL_CONF = "dict-dir ${pkgs.aspellDicts.en}/lib/aspell";
   };
 
-  # Auto upgrade nix package and the daemon service.
-  services.nix-daemon.enable = true;
-  # nix.package = pkgs.nix;
+  system.primaryUser = "dcarley";
 
-  # Create /etc/bashrc that loads the nix-darwin environment.
-  programs.zsh.enable = true;  # default shell on catalina
-  # programs.fish.enable = true;
+  nix.enable = true;
+
+  # Create shell config that loads the nix-darwin environment.
+  programs.zsh.enable = true;  # default shell on catalina and later
 
   programs.gnupg.agent.enable = true;
 
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
 
   system.defaults.dock = {
     autohide = true;
