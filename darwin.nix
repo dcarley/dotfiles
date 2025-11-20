@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }:
 let
-  floxBin = "${inputs.flox.packages.${pkgs.system}.default}/bin/flox";
+  system = pkgs.stdenv.hostPlatform.system;
+  floxPkg = inputs.flox.packages.${system}.default;
+  floxBin = "${floxPkg}/bin/flox";
   floxApps = [
     { name = "Emacs"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/emacs -- emacs"; }
     { name = "Kitty"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/term -- kitty"; }
@@ -26,7 +28,7 @@ in
       # Zoom
       # Spotify
 
-      inputs.flox.packages.${pkgs.system}.default
+      floxPkg
     ];
 
   system.activationScripts.postActivation.text = postActivationScript;
