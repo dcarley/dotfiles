@@ -37,8 +37,6 @@ in
 
   system.primaryUser = "dcarley";
 
-  nix.enable = true;
-
   # Create shell config that loads the nix-darwin environment.
   programs.zsh.enable = true;  # default shell on catalina and later
 
@@ -63,7 +61,11 @@ in
     TrackpadThreeFingerDrag = true;
   };
 
-  # Necessary for using flakes on this system.
+  nixpkgs.flake = {
+   setFlakeRegistry = false;
+   setNixPath = false;
+  };
+  nix.enable = true;
   nix.settings = {
     experimental-features = "nix-command flakes";
     # https://flox.dev/docs/install-flox/#__tabbed_1_5
