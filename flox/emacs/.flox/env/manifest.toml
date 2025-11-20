@@ -37,10 +37,3 @@ nodejs_22.pkg-path = "nodejs_22"
 nil.pkg-path = "nil"
 copilot-language-server.pkg-path = "copilot-language-server"
 
-[options]
-systems = [
-  "aarch64-darwin",
-  "aarch64-linux",
-  "x86_64-darwin",
-  "x86_64-linux",
-]
