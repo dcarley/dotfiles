@@ -4,8 +4,8 @@ let
   floxPkg = inputs.flox.packages.${system}.default;
   floxBin = "${floxPkg}/bin/flox";
   floxApps = [
-    { name = "Emacs"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/emacs -- emacs"; }
-    { name = "Kitty"; command = "${floxBin} activate -m run -d ~/dotfiles/flox/term -- kitty"; }
+    { name = "Emacs"; command = "${floxBin} activate -r dcarley/emacs -- emacs"; }
+    { name = "Kitty"; command = "${floxBin} activate -r dcarley/term -- kitty"; }
   ];
 
   # Generates a script to create a .app for a flox package
