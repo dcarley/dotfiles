@@ -47,6 +47,18 @@ in
 
   security.pam.services.sudo_local.touchIdAuth = true;
 
+  services.aerospace.enable = true;
+
+  # services.aerospace always passes --config-path to a nix-store rendered TOML
+  # built from the module's option defaults, which has an empty [mode.main.binding]
+  # and overrides ~/.aerospace.toml. Strip the flag so Aerospace falls back to
+  # ~/.aerospace.toml (or its built-in defaults if absent).
+  launchd.user.agents.aerospace.serviceConfig.ProgramArguments = pkgs.lib.mkForce [
+    "/bin/sh"
+    "-c"
+    "/bin/wait4path /nix/store && exec ${pkgs.aerospace}/Applications/AeroSpace.app/Contents/MacOS/AeroSpace"
+  ];
+
   system.defaults.dock = {
     autohide = true;
     tilesize = 64;
