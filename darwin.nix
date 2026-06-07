@@ -52,6 +52,7 @@ in
     tilesize = 64;
     static-only = true;
     mru-spaces = false;
+    expose-group-apps = true;
   };
 
   system.keyboard = {
