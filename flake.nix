@@ -8,22 +8,15 @@
     flox.url = "github:flox/flox/latest";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, flox }:
+  outputs = inputs@{ nixpkgs, nix-darwin, ... }:
     let
-      makeSystem = platform: nix-darwin.lib.darwinSystem {
+      makeSystem = nix-darwin.lib.darwinSystem {
         specialArgs = { inherit inputs; };
-        modules = [
-          ./darwin.nix
-          { nixpkgs.hostPlatform = platform; }
-        ];
+        modules = [ ./darwin.nix ];
       };
-      systems = {
-        mbp13 = "x86_64-darwin";
-        mbp16 = "aarch64-darwin";
-        mba15 = "aarch64-darwin";
-      };
+      hostnames = [ "mbp16" "mba15" ];
     in
     {
-      darwinConfigurations = nixpkgs.lib.mapAttrs (hostname: platform: makeSystem platform) systems;
+      darwinConfigurations = nixpkgs.lib.genAttrs hostnames (_: makeSystem);
     };
 }

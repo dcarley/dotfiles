@@ -116,6 +116,7 @@ in
     };
   };
 
+  nixpkgs.hostPlatform = "aarch64-darwin";
   nixpkgs.flake = {
    setFlakeRegistry = false;
    setNixPath = false;
