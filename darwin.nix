@@ -28,6 +28,7 @@ in
       # Zoom
       # Spotify
 
+      pkgs.aerospace
       floxPkg
     ];
 
