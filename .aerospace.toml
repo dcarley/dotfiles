@@ -52,6 +52,20 @@ persistent-workspaces = []
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 on-mode-changed = []
 
+# Pin numbered workspaces (1-9, the alt-N targets) and the screen-share
+# workspace (X) to the external display, falling back to main when absent.
+[workspace-to-monitor-force-assignment]
+1 = ["DELL U2719D", "main"]
+2 = ["DELL U2719D", "main"]
+3 = ["DELL U2719D", "main"]
+4 = ["DELL U2719D", "main"]
+5 = ["DELL U2719D", "main"]
+6 = ["DELL U2719D", "main"]
+7 = ["DELL U2719D", "main"]
+8 = ["DELL U2719D", "main"]
+9 = ["DELL U2719D", "main"]
+X = ["DELL U2719D", "main"]
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
