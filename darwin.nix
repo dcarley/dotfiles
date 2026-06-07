@@ -64,6 +64,45 @@ in
     TrackpadThreeFingerDrag = true;
   };
 
+  # Disable things that interfere with aerospace.
+  system.defaults.spaces.spans-displays = true;
+  system.defaults.NSGlobalDomain.NSAutomaticWindowAnimationsEnabled = false;
+  system.defaults.NSGlobalDomain.NSWindowShouldDragOnGesture = true;
+  system.defaults.WindowManager = {
+    GloballyEnabled = false;
+    AutoHide = false;
+  };
+  system.defaults.CustomUserPreferences = {
+    "com.apple.WindowManager" = {
+      EnableTilingByEdgeDrag = false;
+      EnableTopTilingByEdgeDrag = false;
+      EnableTilingOptionAccelerator = false;
+      EnableTiledWindowMargins = false;
+      EnableStandardClickToShowDesktop = false;
+    };
+    #
+    "com.apple.symbolichotkeys" = {
+      AppleSymbolicHotKeys = {
+        # Ctrl[-Opt]-Arrow
+        "79"  = { enabled = false; };
+        "80"  = { enabled = false; };
+        "81"  = { enabled = false; };
+        "82"  = { enabled = false; };
+        # Ctrl-N
+        "118" = { enabled = false; };
+        "119" = { enabled = false; };
+        "120" = { enabled = false; };
+        "121" = { enabled = false; };
+        "122" = { enabled = false; };
+        "123" = { enabled = false; };
+        "124" = { enabled = false; };
+        "125" = { enabled = false; };
+        "126" = { enabled = false; };
+        "127" = { enabled = false; };
+      };
+    };
+  };
+
   nixpkgs.flake = {
    setFlakeRegistry = false;
    setNixPath = false;
