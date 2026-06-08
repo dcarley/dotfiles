@@ -55,16 +55,16 @@ on-mode-changed = []
 # Pin numbered workspaces (1-9, the alt-N targets) and the screen-share
 # workspace (X) to the external display, falling back to main when absent.
 [workspace-to-monitor-force-assignment]
-1 = ["DELL U2719D", "main"]
-2 = ["DELL U2719D", "main"]
-3 = ["DELL U2719D", "main"]
-4 = ["DELL U2719D", "main"]
-5 = ["DELL U2719D", "main"]
-6 = ["DELL U2719D", "main"]
-7 = ["DELL U2719D", "main"]
-8 = ["DELL U2719D", "main"]
-9 = ["DELL U2719D", "main"]
-X = ["DELL U2719D", "main"]
+1 = ["secondary", "main"]
+2 = ["secondary", "main"]
+3 = ["secondary", "main"]
+4 = ["secondary", "main"]
+5 = ["secondary", "main"]
+6 = ["secondary", "main"]
+7 = ["secondary", "main"]
+8 = ["secondary", "main"]
+9 = ["secondary", "main"]
+X = ["secondary", "main"]
 
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
