@@ -5,3 +5,4 @@
 .clj-kondo/*cache*
 .config/AWSVPNClient
 .DS_Store
+.claude/
