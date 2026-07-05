@@ -35,6 +35,8 @@ CLAUDE.md / memory overrides.
   instead.
 
 ## Tests
+- Multiple similar scenarios → table-driven tests (parametrize / test tables),
+  so the cases sit side by side and are easy to compare.
 - Prefer one assertion pinning the full result shape (list / dict / set
   equality) over `any(...)` + `not any(...)` pairs; filter to the meaningful
   subset first if there's incidental noise. (pytest / Rust / Go / TS.)
