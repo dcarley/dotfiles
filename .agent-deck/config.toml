@@ -23,3 +23,6 @@ theme = "dark"
 [updates]
   check_enabled = false
   notify_in_cli = false
+
+[shell]
+  init_script = "command -v direnv >/dev/null && eval \"$(direnv export zsh)\" || true"
