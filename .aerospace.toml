@@ -218,14 +218,7 @@ X = ["secondary", "main"]
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 [mode.service.binding]
     esc = ['reload-config', 'mode main']
-    r = [
-      # Workaround for https://github.com/nikitabobko/AeroSpace/issues/1615:
-      # close empty-title ghost windows in the focused workspace.
-      # Wrapped in zsh -c so /etc/zshenv puts nix on PATH (the launchd agent's PATH does not).
-      '''exec-and-forget /bin/zsh -c 'aerospace list-windows --workspace focused --json | jq -r ".[] | select(.\"window-title\"==\"\") | .\"window-id\"" | xargs -I{} aerospace close --window-id {} 2>/dev/null' ''',
-      # reset layout
-      'flatten-workspace-tree', 'mode main'
-    ]
+    r = ['flatten-workspace-tree', 'mode main'] # reset layout
     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
     backspace = ['close-all-windows-but-current', 'mode main']
 
