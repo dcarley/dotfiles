@@ -34,10 +34,6 @@ in
 
   system.activationScripts.postActivation.text = postActivationScript;
 
-  environment.variables = {
-    ASPELL_CONF = "dict-dir ${pkgs.aspellDicts.en}/lib/aspell";
-  };
-
   system.primaryUser = "dcarley";
 
   # Create shell config that loads the nix-darwin environment.
