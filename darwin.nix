@@ -14,7 +14,7 @@ let
     app:
     let
       bin = "flox-${pkgs.lib.toLower app.name}";
-      launcher = pkgs.writeShellScriptBin bin "exec zsh -l -c '${app.command}'";
+      launcher = pkgs.writeShellScriptBin bin "exec ${app.command}";
     in
     pkgs.runCommand "${app.name}.app" { } ''
       mkdir -p $out/bin $out/Applications/${app.name}.app/Contents/MacOS
