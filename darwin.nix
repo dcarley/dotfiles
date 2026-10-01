@@ -8,15 +8,19 @@ let
     { name = "Kitty"; command = "${floxBin} activate -r dcarley/term -- kitty"; }
   ];
 
-  # Generates a script to create a .app for a flox package
-  mkFloxAppScript = app: ''
-    mkdir -p "/Applications/Flox Trampolines"
-    osacompile \
-      -o "/Applications/Flox Trampolines/${app.name}.app" \
-      -e 'do shell script "zsh -l -c \"${app.command}\""'
-  '';
-
-  postActivationScript = pkgs.lib.concatStringsSep "\n" (map mkFloxAppScript floxApps);
+  # Builds a .app that launches a flox package. The bundle's executable execs
+  # straight into the command, so no wrapper process remains alongside the app.
+  mkFloxApp =
+    app:
+    let
+      bin = "flox-${pkgs.lib.toLower app.name}";
+      launcher = pkgs.writeShellScriptBin bin "exec zsh -l -c '${app.command}'";
+    in
+    pkgs.runCommand "${app.name}.app" { } ''
+      mkdir -p $out/bin $out/Applications/${app.name}.app/Contents/MacOS
+      ln -s ${launcher}/bin/${bin} $out/bin/${bin}
+      ${pkgs.writeDarwinBundle}/bin/write-darwin-bundle $out ${app.name} ${bin}
+    '';
 in
 {
   environment.systemPackages =
@@ -30,9 +34,8 @@ in
 
       pkgs.aerospace
       floxPkg
-    ];
-
-  system.activationScripts.postActivation.text = postActivationScript;
+    ]
+    ++ map mkFloxApp floxApps;
 
   system.primaryUser = "dcarley";
 
