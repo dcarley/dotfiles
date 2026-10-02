@@ -4,21 +4,19 @@ let
   floxPkg = inputs.flox.packages.${system}.default;
   floxBin = "${floxPkg}/bin/flox";
   floxApps = [
-    { name = "Emacs"; command = "${floxBin} activate -r dcarley/emacs -- emacs"; }
-    { name = "Kitty"; command = "${floxBin} activate -r dcarley/term -- kitty"; }
+    { name = "Emacs"; args = "activate -r dcarley/emacs -- emacs"; }
+    { name = "Kitty"; args = "activate -r dcarley/term -- kitty"; }
   ];
 
-  # Builds a .app that launches a flox package. The bundle's executable execs
-  # straight into the command, so no wrapper process remains alongside the app.
+  # Builds a .app that launches a flox package.
   mkFloxApp =
     app:
     let
       bin = "flox-${pkgs.lib.toLower app.name}";
-      launcher = pkgs.writeShellScriptBin bin "exec ${app.command}";
     in
-    pkgs.runCommand "${app.name}.app" { } ''
+    pkgs.runCommand "${app.name}.app" { nativeBuildInputs = [ pkgs.makeBinaryWrapper ]; } ''
       mkdir -p $out/bin $out/Applications/${app.name}.app/Contents/MacOS
-      ln -s ${launcher}/bin/${bin} $out/bin/${bin}
+      makeBinaryWrapper ${floxBin} $out/bin/${bin} --add-flags "${app.args}"
       ${pkgs.writeDarwinBundle}/bin/write-darwin-bundle $out ${app.name} ${bin}
     '';
 in
