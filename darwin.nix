@@ -64,6 +64,10 @@ in
     expose-group-apps = true;
   };
 
+  system.defaults.finder = {
+    AppleShowAllFiles = true;
+  };
+
   system.keyboard = {
     enableKeyMapping = true;
     remapCapsLockToControl = true;
