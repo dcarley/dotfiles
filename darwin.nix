@@ -17,7 +17,8 @@ let
     pkgs.runCommand "${app.name}.app" { nativeBuildInputs = [ pkgs.makeBinaryWrapper ]; } ''
       mkdir -p $out/bin $out/Applications/${app.name}.app/Contents/MacOS
       makeBinaryWrapper ${pkgs.lib.getExe' pkgs.util-linux "setsid"} $out/bin/${bin} \
-        --add-flag --fork --add-flag ${floxBin} --add-flags "${app.args}"
+        --add-flag --fork --add-flag ${floxBin} --add-flags "${app.args}" \
+        --suffix PATH : /run/current-system/sw/bin:/nix/var/nix/profiles/default/bin
       ${pkgs.writeDarwinBundle}/bin/write-darwin-bundle $out ${app.name} ${bin}
     '';
 in
