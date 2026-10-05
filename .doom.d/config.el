@@ -5,6 +5,10 @@
 (setq projectile-project-search-path '("~/projects/dcarley/"
                                        "~/projects/flox/"))
 
+;; zsh reads nix-darwin's /etc/zshenv on every invocation, which overwrites
+;; PATH and drops the Flox env that Emacs was launched in.
+(setq shell-file-name (executable-find "bash"))
+
 ;; Auto-install font. Can't use custom oath from Flox provided `nerdfonts`.
 (unless (member "Symbols Nerd Font Mono" (font-family-list))
   (nerd-icons-install-fonts t))
