@@ -44,6 +44,10 @@ in
   programs.gnupg.agent.enable = true;
 
   security.pam.services.sudo_local.touchIdAuth = true;
+  security.pki.caCertificateBlacklist = [
+    "Comodo AAA Services root"
+    "emSign ECC Root CA - G3"
+  ];
 
   services.aerospace.enable = true;
 
